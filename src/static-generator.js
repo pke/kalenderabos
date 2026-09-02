@@ -1,5 +1,6 @@
 import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import { basename, join } from "node:path";
+import { fingerprintDirectory } from "./data-fingerprint.js";
 
 const SITE_ORIGIN = "https://schulferien.kalenderabos.de";
 const SOURCE_REPOSITORY = "https://github.com/openpotato/openholidaysapi.data";
@@ -604,6 +605,9 @@ export async function buildStaticData({
   const supplementSources = supplementDirectory
     ? await readJsonIfExists(join(supplementDirectory, "sources.json"))
     : {};
+  const supplementRevision = supplementDirectory
+    ? await fingerprintDirectory(supplementDirectory)
+    : "";
   const countryCodes = countries.map((country) => country.isoCode);
   if (new Set(countryCodes).size !== countryCodes.length) {
     throw new Error("Duplicate country code in countries.csv");
@@ -753,6 +757,7 @@ export async function buildStaticData({
     tree: sourceTreeSha,
     license: "ODbL-1.0",
     supplements: [...usedSupplements].sort(),
+    supplementRevision: usedSupplements.size ? supplementRevision : null,
   };
   const catalog = {
     schemaVersion: 1,
@@ -776,6 +781,7 @@ export async function buildStaticData({
     feedCount,
     renderedEventCount: eventCount,
     supplementCountries: [...usedSupplements].sort(),
+    supplementRevision: usedSupplements.size ? supplementRevision : null,
   };
   await writeFile(
     join(outputDirectory, "catalog.json"),

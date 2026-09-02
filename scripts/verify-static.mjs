@@ -9,6 +9,7 @@ const manifest = JSON.parse(await readFile(resolve(outputDirectory, "build.json"
 const indexHtml = await readFile(resolve(outputDirectory, "index.html"), "utf8");
 const app = await readFile(resolve(outputDirectory, "app.js"), "utf8");
 const humans = await readFile(resolve(outputDirectory, "humans.txt"), "utf8");
+const expectedSupplementRevision = process.env.EXPECTED_SUPPLEMENT_REVISION || "";
 const errors = [];
 let checkedFeeds = 0;
 const feedPaths = new Set();
@@ -167,9 +168,16 @@ if (catalog.c?.de?.r?.st !== "Sachsen-Anhalt") {
 if (
   !catalog.c?.ru?.a?.includes("Bundesweite Empfehlung") ||
   !catalog.c.ru.l.split(",").includes("ru") ||
-  !manifest.supplementCountries?.includes("RU")
+  !manifest.supplementCountries?.includes("RU") ||
+  !/^[a-f0-9]{64}$/.test(manifest.supplementRevision || "")
 ) {
   fail("Russian recommended calendar or its advisory metadata is missing");
+}
+if (
+  expectedSupplementRevision &&
+  manifest.supplementRevision !== expectedSupplementRevision
+) {
+  fail("generated supplement revision differs from the checked pipeline input");
 }
 if (
   !indexHtml.includes('<link rel="author" href="/humans.txt"') ||

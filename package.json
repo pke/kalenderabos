@@ -7,6 +7,7 @@
   "scripts": {
     "sync:data": "node scripts/sync-data.mjs",
     "generate": "node scripts/generate-static.mjs",
+    "fingerprint:supplements": "node scripts/fingerprint-supplements.mjs",
     "verify": "node scripts/verify-static.mjs",
     "build": "pnpm sync:data && pnpm generate && pnpm verify",
     "dev": "node scripts/dev-server.mjs",
