@@ -64,7 +64,9 @@ Repository, manuell und monatlich. Bei monatlichen Läufen vergleicht er den
 Git-Tree des Upstream-Verzeichnisses `src/` mit dem zuletzt erfolgreich
 veröffentlichten Stand:
 
-1. Ist der Tree unverändert, werden weder Kalender neu erzeugt noch deployed.
+1. Sind sowohl der OpenHolidays-Tree als auch der SHA-256-Fingerabdruck der
+   lokalen Ergänzungen unverändert, werden weder Kalender neu erzeugt noch
+   deployed.
 2. Bei Änderungen prüft der lokale Generator Kennungen, Datumswerte und regionale
    Referenzen beim Einlesen der Tabellen. Upstream-Code wird nicht ausgeführt.
 3. Das Pages-Artefakt wird nur nach erfolgreicher Validierung, Tests,
@@ -87,7 +89,8 @@ vom russischen Bildungsministerium empfohlenen Kalender 2026/27 für Schulen mit
 Vierteljahressystem. Diese Termine sind Empfehlungen; einzelne Schulen dürfen
 abweichen. Jeder erzeugte Kalender enthält seine konkrete Datenquelle,
 Attribution und Lizenz in den Metadaten. `dist/build.json` dokumentiert zusätzlich
-Commit und Hash des OpenHolidays-Datentrees sowie verwendete Ergänzungsländer.
+Commit und Hash des OpenHolidays-Datentrees, verwendete Ergänzungsländer und den
+exakten SHA-256-Fingerabdruck der Ergänzungsdaten.
 
 Die Software in diesem Repository steht unter der [MIT-Lizenz](LICENSE).
 Die OpenHolidays-Daten, die lokal aufbereiteten Ergänzungen und daraus erzeugte

@@ -60,7 +60,8 @@ The workflow in `.github/workflows/pages.yml` runs for changes to this repositor
 on demand, and monthly. For scheduled runs it compares the Git tree of the
 upstream `src/` directory with the last successfully published revision:
 
-1. If the tree is unchanged, calendar generation and deployment are skipped.
+1. If both the OpenHolidays tree and the SHA-256 fingerprint of the local
+   supplements are unchanged, calendar generation and deployment are skipped.
 2. If it changed, the local generator validates identifiers, dates, and regional
    references while reading the upstream tables. Upstream code is never executed.
 3. A Pages artifact is published only after validation, tests, generation, and
@@ -83,7 +84,8 @@ Russian Ministry of Education's recommended 2026/27 calendar for schools using a
 four-term system. Those dates are recommendations and individual schools may
 differ. Every generated calendar includes its concrete source, attribution, and
 license in its metadata. `dist/build.json` also records the upstream commit,
-data-tree hash, and any supplemented countries used by the build.
+data-tree hash, supplemented countries, and the exact SHA-256 fingerprint of the
+supplemental data used by the build.
 
 The software in this repository is licensed under the [MIT License](LICENSE).
 The OpenHolidays data, locally structured supplements, and generated database
