@@ -631,6 +631,26 @@ function moveTrackpadPinch(event) {
   }
 }
 
+function handleSemanticZoomShortcut(event) {
+  if (event.defaultPrevented || event.ctrlKey || event.metaKey || event.altKey) return;
+
+  const target = event.target;
+  if (
+    target instanceof HTMLElement &&
+    (target.isContentEditable || ["INPUT", "TEXTAREA", "SELECT"].includes(target.tagName))
+  ) return;
+
+  const button = event.key === "+"
+    ? semanticZoomIn
+    : event.key === "-"
+      ? semanticZoomOut
+      : null;
+  if (!button || button.disabled) return;
+
+  event.preventDefault();
+  button.click();
+}
+
 function loadFeeds({ targetZoomLevel = 0 } = {}) {
   const country = selectedCountry();
   semanticZoomOut.disabled = true;
@@ -765,6 +785,7 @@ document.addEventListener("touchmove", moveTouchPinch, { capture: true, passive:
 document.addEventListener("touchend", endTouchPinch, { capture: true });
 document.addEventListener("touchcancel", endTouchPinch, { capture: true });
 document.addEventListener("wheel", moveTrackpadPinch, { capture: true, passive: false });
+document.addEventListener("keydown", handleSemanticZoomShortcut);
 form.addEventListener("submit", (event) => event.preventDefault());
 
 initialize();
