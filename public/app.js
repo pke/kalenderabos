@@ -3,7 +3,6 @@ const countryInput = document.querySelector("#country");
 const countryOptions = document.querySelector("#country-options");
 const languageOptions = document.querySelector("#language-options");
 const languageField = document.querySelector("#language-field");
-const siteHeader = document.querySelector(".site-header");
 const detailView = document.querySelector("#detail-view");
 const feedSection = document.querySelector("#feed-section");
 const feedHeading = document.querySelector("#feed-heading");
@@ -14,18 +13,21 @@ const feedIndex = document.querySelector("#feed-index");
 const feedEmpty = document.querySelector("#feed-empty");
 const feedList = document.querySelector("#feed-list");
 const semanticView = document.querySelector("#semantic-view");
+const semanticScroll = document.querySelector("#semantic-scroll");
 const semanticOverview = document.querySelector("#semantic-overview");
 const semanticHeading = document.querySelector("#semantic-heading");
 const semanticCount = document.querySelector("#semantic-count");
 const semanticZoomLabel = document.querySelector("#semantic-zoom-label");
 const semanticZoomOut = document.querySelector("#semantic-zoom-out");
 const semanticZoomIn = document.querySelector("#semantic-zoom-in");
+const siteFooter = document.querySelector("#site-footer");
 const status = document.querySelector("#form-status");
 
 const LARGE_FEED_THRESHOLD = 30;
 const MAX_SEMANTIC_ZOOM = 3;
 const state = {
   countries: [],
+  countryInitialFilter: "",
   detailHeading: "Verfügbare Ferienkalender",
   renderedCountry: "",
   initialCountryMatchesLocale: false,
@@ -422,6 +424,13 @@ function replaceSemanticTiles(tiles) {
   const fragment = document.createDocumentFragment();
   for (const tile of tiles) fragment.append(tile);
   semanticOverview.replaceChildren(fragment);
+  semanticScroll.scrollTop = 0;
+}
+
+function semanticCountries() {
+  return state.countryInitialFilter
+    ? state.countries.filter((country) => country.initial === state.countryInitialFilter)
+    : state.countries;
 }
 
 function renderSemanticOverview() {
@@ -441,7 +450,8 @@ function renderSemanticOverview() {
     heading = detailHeadings(country).semantic;
     count = `${groups.length} Buchstaben`;
   } else if (semanticZoomLevel === 2) {
-    tiles = state.countries.map((countryItem) => createTile({
+    const countries = semanticCountries();
+    tiles = countries.map((countryItem) => createTile({
       label: countryItem.name,
       meta: countryItem.isoCode,
       kind: "country",
@@ -449,8 +459,10 @@ function renderSemanticOverview() {
       initial: countryItem.initial,
       selection: countryItem.code === country?.code ? "Vorausgewählt" : "",
     }));
-    heading = "Länder";
-    count = `${state.countries.length} Länder`;
+    heading = state.countryInitialFilter
+      ? `Länder mit ${state.countryInitialFilter}`
+      : "Länder";
+    count = `${countries.length} Länder`;
   } else if (semanticZoomLevel === 3) {
     const groups = groupedItemsByInitial(state.countries);
     tiles = groups.map(([initial, items]) => createTile({
@@ -474,7 +486,7 @@ function renderSemanticOverview() {
 function semanticEntryCount(level) {
   const country = selectedCountry();
   if (level === 1 && country) return groupedItemsByInitial(country.calendars).length;
-  if (level === 2) return state.countries.length;
+  if (level === 2) return semanticCountries().length;
   if (level === 3) return groupedItemsByInitial(state.countries).length;
   return Infinity;
 }
@@ -495,8 +507,35 @@ function meaningfulSemanticLevel(requestedLevel) {
   return Math.max(0, Math.min(MAX_SEMANTIC_ZOOM, level));
 }
 
+function setSemanticTransitionOrigin({ element, clientX, clientY } = {}) {
+  const view = semanticZoomLevel === 0 ? detailView : semanticScroll;
+  const viewRect = view.getBoundingClientRect();
+  let x = clientX;
+  let y = clientY;
+
+  if (element instanceof Element) {
+    const elementRect = element.getBoundingClientRect();
+    x = elementRect.left + elementRect.width / 2;
+    y = elementRect.top + elementRect.height / 2;
+  }
+
+  if (!Number.isFinite(x) || !Number.isFinite(y) || !viewRect.width || !viewRect.height) {
+    document.documentElement.style.setProperty("--semantic-origin-x", "50%");
+    document.documentElement.style.setProperty("--semantic-origin-y", "42%");
+    return;
+  }
+
+  const relativeX = Math.max(0, Math.min(100, ((x - viewRect.left) / viewRect.width) * 100));
+  const relativeY = Math.max(0, Math.min(100, ((y - viewRect.top) / viewRect.height) * 100));
+  document.documentElement.style.setProperty("--semantic-origin-x", `${relativeX}%`);
+  document.documentElement.style.setProperty("--semantic-origin-y", `${relativeY}%`);
+}
+
 function applySemanticZoom(level, afterUpdate) {
   semanticZoomLevel = level;
+  if (semanticZoomLevel === MAX_SEMANTIC_ZOOM) state.countryInitialFilter = "";
+  const footerHost = semanticZoomLevel === 0 ? detailView : semanticScroll;
+  if (siteFooter.parentElement !== footerHost) footerHost.append(siteFooter);
   const labels = ["Detailansicht", "Regionsindex", "Länder", "Länderindex"];
   semanticZoomLabel.textContent = labels[semanticZoomLevel];
   semanticZoomIn.disabled = semanticZoomLevel === 0;
@@ -509,14 +548,15 @@ function applySemanticZoom(level, afterUpdate) {
     feedHeading.textContent = state.detailHeading;
     semanticOverview.replaceChildren();
     applyFeedFilter();
+    detailView.scrollTop = 0;
   } else {
     renderSemanticOverview();
   }
-  window.scrollTo({ top: 0, behavior: "auto" });
   afterUpdate?.();
 }
 
-function setSemanticZoom(level, { afterUpdate } = {}) {
+function setSemanticZoom(level, { afterUpdate, origin } = {}) {
+  setSemanticTransitionOrigin(origin);
   const nextLevel = meaningfulSemanticLevel(level);
   if (nextLevel > 0 && semanticZoomLevel === 0 && feedFilter.value) {
     feedFilter.value = "";
@@ -547,8 +587,8 @@ function setSemanticZoom(level, { afterUpdate } = {}) {
   const incomingView = nextLevel === 0 ? detailView : semanticView;
   incomingView.animate(
     direction === "out"
-      ? [{ opacity: 0, transform: "scale(0.88)" }, { opacity: 1, transform: "scale(1)" }]
-      : [{ opacity: 0, transform: "scale(1.12)" }, { opacity: 1, transform: "scale(1)" }],
+      ? [{ opacity: 0, transform: "scale(1.12)" }, { opacity: 1, transform: "scale(1)" }]
+      : [{ opacity: 0, transform: "scale(0.88)" }, { opacity: 1, transform: "scale(1)" }],
     { duration: 520, easing: "cubic-bezier(0.22, 1, 0.36, 1)" },
   );
 }
@@ -558,14 +598,6 @@ function scrollWithin(container, element) {
     top: container.scrollTop +
       element.getBoundingClientRect().top -
       container.getBoundingClientRect().top,
-    behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
-  });
-}
-
-function scrollPageTo(element) {
-  const headerOffset = siteHeader.getBoundingClientRect().height + 12;
-  window.scrollTo({
-    top: Math.max(0, window.scrollY + element.getBoundingClientRect().top - headerOffset),
     behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
   });
 }
@@ -584,6 +616,13 @@ function touchDistance(touches) {
   );
 }
 
+function touchCenter(touches) {
+  return {
+    clientX: (touches[0].clientX + touches[1].clientX) / 2,
+    clientY: (touches[0].clientY + touches[1].clientY) / 2,
+  };
+}
+
 function startTouchPinch(event) {
   if (event.touches.length !== 2) return;
   event.preventDefault();
@@ -597,10 +636,10 @@ function moveTouchPinch(event) {
   if (touchPinchHandled) return;
   const scale = touchDistance(event.touches) / touchPinchStartDistance;
   if (scale < 0.84 && semanticZoomLevel < MAX_SEMANTIC_ZOOM) {
-    setSemanticZoom(semanticZoomLevel + 1);
+    setSemanticZoom(semanticZoomLevel + 1, { origin: touchCenter(event.touches) });
     touchPinchHandled = true;
   } else if (scale > 1.16 && semanticZoomLevel > 0) {
-    setSemanticZoom(semanticZoomLevel - 1);
+    setSemanticZoom(semanticZoomLevel - 1, { origin: touchCenter(event.touches) });
     touchPinchHandled = true;
   }
 }
@@ -623,10 +662,14 @@ function moveTrackpadPinch(event) {
   trackpadPinchDelta += event.deltaY;
   if (Math.abs(trackpadPinchDelta) < 24) return;
   if (trackpadPinchDelta > 0 && semanticZoomLevel < MAX_SEMANTIC_ZOOM) {
-    setSemanticZoom(semanticZoomLevel + 1);
+    setSemanticZoom(semanticZoomLevel + 1, {
+      origin: { clientX: event.clientX, clientY: event.clientY },
+    });
     trackpadPinchHandled = true;
   } else if (trackpadPinchDelta < 0 && semanticZoomLevel > 0) {
-    setSemanticZoom(semanticZoomLevel - 1);
+    setSemanticZoom(semanticZoomLevel - 1, {
+      origin: { clientX: event.clientX, clientY: event.clientY },
+    });
     trackpadPinchHandled = true;
   }
 }
@@ -651,7 +694,7 @@ function handleSemanticZoomShortcut(event) {
   button.click();
 }
 
-function loadFeeds({ targetZoomLevel = 0 } = {}) {
+function loadFeeds({ targetZoomLevel = 0, origin } = {}) {
   const country = selectedCountry();
   semanticZoomOut.disabled = true;
   feedSection.hidden = true;
@@ -664,7 +707,7 @@ function loadFeeds({ targetZoomLevel = 0 } = {}) {
   }
   state.detailHeading = detailHeadings(country).detail;
   setStatus(country.advisory);
-  setSemanticZoom(targetZoomLevel);
+  setSemanticZoom(targetZoomLevel, { origin });
 }
 
 async function writeClipboard(text) {
@@ -716,6 +759,7 @@ async function initialize() {
 }
 
 countryInput.addEventListener("input", () => {
+  state.countryInitialFilter = "";
   if (selectedCountry()) {
     populateLanguages();
     loadFeeds();
@@ -743,8 +787,8 @@ semanticOverview.addEventListener("click", (event) => {
   if (tile.dataset.kind === "region-initial") {
     const initial = tile.dataset.value;
     setSemanticZoom(0, {
+      origin: { element: tile },
       afterUpdate: () => requestAnimationFrame(() => {
-        scrollPageTo(feedSection);
         scrollFeedToInitial(initial);
       }),
     });
@@ -752,23 +796,17 @@ semanticOverview.addEventListener("click", (event) => {
   }
 
   if (tile.dataset.kind === "country-initial") {
+    state.countryInitialFilter = tile.dataset.value;
     const countries = state.countries.filter(
       (country) => country.initial === tile.dataset.value,
     );
     if (countries.length === 1) {
       countryInput.value = countries[0].name;
       populateLanguages();
-      loadFeeds({ targetZoomLevel: 1 });
+      loadFeeds({ targetZoomLevel: 1, origin: { element: tile } });
       return;
     }
-    const initial = tile.dataset.value;
-    setSemanticZoom(2, {
-      afterUpdate: () => requestAnimationFrame(() => {
-        const country = [...semanticOverview.querySelectorAll("[data-kind='country']")]
-          .find((item) => item.dataset.initial === initial);
-        if (country) scrollPageTo(country);
-      }),
-    });
+    setSemanticZoom(2, { origin: { element: tile } });
     return;
   }
 
@@ -777,7 +815,7 @@ semanticOverview.addEventListener("click", (event) => {
     if (!country) return;
     countryInput.value = country.name;
     populateLanguages();
-    loadFeeds({ targetZoomLevel: 1 });
+    loadFeeds({ targetZoomLevel: 1, origin: { element: tile } });
   }
 });
 document.addEventListener("touchstart", startTouchPinch, { capture: true, passive: false });

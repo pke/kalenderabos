@@ -14,7 +14,7 @@
     <link rel="preload" href="/catalog.json" as="fetch" crossorigin />
     <script src="/app.js" type="module"></script>
   </head>
-  <body>
+  <body class="calendar-app">
     <div class="page-shell">
       <header class="site-header">
         <a class="brand" href="/" aria-label="Schulferien-Kalenderabo Startseite">
@@ -131,22 +131,24 @@
             <h2 id="semantic-heading">Regionen nach Anfangsbuchstaben</h2>
             <span id="semantic-count">Länder werden geladen …</span>
           </header>
-          <div
-            class="semantic-overview"
-            id="semantic-overview"
-            aria-live="polite"
-          ></div>
+          <div class="semantic-scroll" id="semantic-scroll">
+            <div
+              class="semantic-overview"
+              id="semantic-overview"
+              aria-live="polite"
+            ></div>
+
+            <footer id="site-footer">
+              <p>Open-Data-Kalender · monatlich geprüft · kein Benutzerkonto</p>
+              <div class="footer-links">
+                <p>Daten unter ODbL, bereitgestellt von OpenHolidays und amtlichen Ergänzungsquellen.</p>
+                <a href="/datenschutz.html">Datenschutz</a>
+              </div>
+            </footer>
+          </div>
         </section>
 
       </main>
-
-      <footer>
-        <p>Open-Data-Kalender · monatlich geprüft · kein Benutzerkonto</p>
-        <div class="footer-links">
-          <p>Daten unter ODbL, bereitgestellt von OpenHolidays und amtlichen Ergänzungsquellen.</p>
-          <a href="/datenschutz.html">Datenschutz</a>
-        </div>
-      </footer>
     </div>
   </body>
 </html>

@@ -34,6 +34,11 @@ body {
     var(--paper);
 }
 
+body.calendar-app {
+  height: 100dvh;
+  min-height: 100dvh;
+}
+
 button,
 input {
   font: inherit;
@@ -47,6 +52,14 @@ a {
   width: min(1180px, calc(100% - 40px));
   margin: 0 auto;
   padding-bottom: calc(48px + env(safe-area-inset-bottom));
+}
+
+.calendar-app .page-shell {
+  display: grid;
+  height: 100dvh;
+  min-height: 0;
+  padding-bottom: 0;
+  grid-template-rows: auto minmax(0, 1fr);
 }
 
 .site-header {
@@ -114,25 +127,69 @@ a {
   padding: 28px 0 30px;
 }
 
+.calendar-app .app-main {
+  display: flex;
+  height: auto;
+  min-height: 0;
+  padding-bottom: 0;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.calendar-app .global-hero {
+  flex: 0 0 auto;
+}
+
 #detail-view[hidden],
 .semantic-view[hidden] {
   display: none;
 }
 
 #detail-view,
-.semantic-view {
+.semantic-scroll {
+  transform-origin: var(--semantic-origin-x, 50%) var(--semantic-origin-y, 42%);
   view-transition-name: semantic-content;
 }
 
+.calendar-app #detail-view,
+.calendar-app .semantic-view {
+  min-height: 0;
+  flex: 1 1 auto;
+}
+
+.calendar-app #detail-view {
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+
+.calendar-app #detail-view > .configurator {
+  min-height: 100%;
+}
+
+.calendar-app .semantic-view {
+  display: flex;
+  padding-bottom: 0;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.calendar-app #detail-view[hidden],
+.calendar-app .semantic-view[hidden] {
+  display: none;
+}
+
 ::view-transition-group(semantic-content) {
+  animation-name: none;
   animation-duration: 520ms;
   animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 ::view-transition-old(semantic-content),
 ::view-transition-new(semantic-content) {
+  animation-duration: 520ms;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
   mix-blend-mode: normal;
-  transform-origin: center 42%;
+  transform-origin: var(--semantic-origin-x, 50%) var(--semantic-origin-y, 42%);
 }
 
 html[data-semantic-direction="out"]::view-transition-old(semantic-content) {
@@ -162,7 +219,7 @@ html[data-semantic-direction="in"]::view-transition-new(semantic-content) {
 @keyframes semantic-zoom-out-new {
   from {
     opacity: 0;
-    transform: scale(0.9);
+    transform: scale(1.12);
   }
 }
 
@@ -177,7 +234,7 @@ html[data-semantic-direction="in"]::view-transition-new(semantic-content) {
 @keyframes semantic-zoom-in-new {
   from {
     opacity: 0;
-    transform: scale(1.12);
+    transform: scale(0.9);
   }
 }
 
@@ -508,6 +565,21 @@ input[type="text"]:disabled {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 10px;
+}
+
+.calendar-app .semantic-scroll {
+  min-height: 0;
+  flex: 1 1 auto;
+  padding-right: 4px;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scrollbar-gutter: stable;
+}
+
+.calendar-app .semantic-overview {
+  min-height: 100%;
+  align-content: start;
+  padding-bottom: calc(72px + env(safe-area-inset-bottom));
 }
 
 .semantic-tile {
