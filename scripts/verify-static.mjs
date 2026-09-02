@@ -3,7 +3,7 @@ import { resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const projectDirectory = resolve(fileURLToPath(new URL("..", import.meta.url)));
-const outputDirectory = resolve(process.argv[2] || resolve(projectDirectory, "dist"));
+const outputDirectory = resolve(process.argv[2] || resolve(projectDirectory, "www"));
 const catalog = JSON.parse(await readFile(resolve(outputDirectory, "catalog.json"), "utf8"));
 const manifest = JSON.parse(await readFile(resolve(outputDirectory, "build.json"), "utf8"));
 const indexHtml = await readFile(resolve(outputDirectory, "index.html"), "utf8");

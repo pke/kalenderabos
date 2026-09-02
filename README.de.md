@@ -48,7 +48,7 @@ pnpm test
 pnpm dev
 ```
 
-`pnpm build` aktualisiert den lokalen Snapshot von `main` und erzeugt `dist/`.
+`pnpm build` aktualisiert den lokalen Snapshot von `main` und erzeugt `www/`.
 `pnpm dev` liefert dieses Verzeichnis unter Port 8791 aus und zeigt sowohl die
 Loopback- als auch die verfügbaren LAN-Adressen an.
 
@@ -88,7 +88,7 @@ Open Database License (ODbL). Für Russland enthält das Projekt zusätzlich den
 vom russischen Bildungsministerium empfohlenen Kalender 2026/27 für Schulen mit
 Vierteljahressystem. Diese Termine sind Empfehlungen; einzelne Schulen dürfen
 abweichen. Jeder erzeugte Kalender enthält seine konkrete Datenquelle,
-Attribution und Lizenz in den Metadaten. `dist/build.json` dokumentiert zusätzlich
+Attribution und Lizenz in den Metadaten. `www/build.json` dokumentiert zusätzlich
 Commit und Hash des OpenHolidays-Datentrees, verwendete Ergänzungsländer und den
 exakten SHA-256-Fingerabdruck der Ergänzungsdaten.
 

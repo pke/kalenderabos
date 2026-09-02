@@ -46,7 +46,7 @@ pnpm test
 pnpm dev
 ```
 
-`pnpm build` updates the local `main` snapshot and generates `dist/`. `pnpm dev`
+`pnpm build` updates the local `main` snapshot and generates `www/`. `pnpm dev`
 serves that directory on port 8791 and prints both loopback and available LAN
 addresses.
 
@@ -83,7 +83,7 @@ Database License (ODbL). For Russia, the project additionally includes the
 Russian Ministry of Education's recommended 2026/27 calendar for schools using a
 four-term system. Those dates are recommendations and individual schools may
 differ. Every generated calendar includes its concrete source, attribution, and
-license in its metadata. `dist/build.json` also records the upstream commit,
+license in its metadata. `www/build.json` also records the upstream commit,
 data-tree hash, supplemented countries, and the exact SHA-256 fingerprint of the
 supplemental data used by the build.
 

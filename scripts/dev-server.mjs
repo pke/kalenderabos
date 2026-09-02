@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 
 const port = Number(process.env.PORT || 8791);
 const host = process.env.HOST || "0.0.0.0";
-const outputDirectory = resolve(fileURLToPath(new URL("../dist/", import.meta.url)));
+const outputDirectory = resolve(fileURLToPath(new URL("../www/", import.meta.url)));
 const mimeTypes = {
   ".css": "text/css; charset=utf-8",
   ".html": "text/html; charset=utf-8",

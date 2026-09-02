@@ -29,7 +29,7 @@ const supplementDirectory = resolve(option(
   "supplements",
   process.env.HOLIDAY_SUPPLEMENT_DIR || resolve(projectDirectory, "data/supplements"),
 ));
-const outputDirectory = resolve(option("output", resolve(projectDirectory, "dist")));
+const outputDirectory = resolve(option("output", resolve(projectDirectory, "www")));
 const generatedAt = option("generated-at", process.env.BUILD_TIMESTAMP || new Date().toISOString());
 const sourceCommit = option("commit", process.env.SOURCE_COMMIT || git(sourceDirectory, "rev-parse", "HEAD"));
 const sourceTreeSha = option(
