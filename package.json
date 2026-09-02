@@ -1,0 +1,15 @@
+{
+  "name": "schulferien-kalenderabos-de",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.19.0",
+  "scripts": {
+    "sync:data": "node scripts/sync-data.mjs",
+    "generate": "node scripts/generate-static.mjs",
+    "verify": "node scripts/verify-static.mjs",
+    "build": "pnpm sync:data && pnpm generate && pnpm verify",
+    "dev": "node scripts/dev-server.mjs",
+    "test": "node --test"
+  }
+}
