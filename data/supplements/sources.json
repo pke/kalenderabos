@@ -1,0 +1,35 @@
+{
+  "RU": {
+    "name": [
+      {
+        "language": "RU",
+        "text": "Министерство просвещения Российской Федерации"
+      },
+      {
+        "language": "DE",
+        "text": "Bildungsministerium der Russischen Föderation"
+      },
+      {
+        "language": "EN",
+        "text": "Ministry of Education of the Russian Federation"
+      }
+    ],
+    "url": "https://edu.gov.ru/press/11820/minprosvescheniya-rossii-napravilo-v-regiony-rekomendacii-po-grafiku-kanikul-v-2026-27-uchebnomu-godu/",
+    "license": "ODbL 1.0",
+    "recommended": true,
+    "notice": [
+      {
+        "language": "RU",
+        "text": "Федеральная рекомендация для школ с обучением по четвертям; отдельные школы могут устанавливать иной график."
+      },
+      {
+        "language": "DE",
+        "text": "Bundesweite Empfehlung für Schulen mit Vierteljahressystem; einzelne Schulen können abweichen."
+      },
+      {
+        "language": "EN",
+        "text": "Nationwide recommendation for schools using a four-term system; individual schools may differ."
+      }
+    ]
+  }
+}

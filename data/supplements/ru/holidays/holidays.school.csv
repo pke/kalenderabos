@@ -1,0 +1,6 @@
+Id;Country;StartDate;EndDate;Type;RegionalScope;Name;Subdivisions;Groups
+10916079-e54e-43bc-8903-b5900d16b2dd;RU;2026-10-26;2026-11-03;School;National;RU Осенние каникулы,DE Herbstferien,EN Autumn holidays;;
+232b6970-054f-472e-a3df-e08f6f541feb;RU;2026-12-31;2027-01-10;School;National;RU Зимние каникулы,DE Winterferien,EN Winter holidays;;
+b69789ff-4efe-4c66-85dc-2c47a0c89b67;RU;2027-02-15;2027-02-21;School;National;RU Дополнительные каникулы (1-й класс),DE Zusätzliche Ferien (1. Klasse),EN Additional holidays (first grade);;
+c4cd1300-7638-442e-b45f-e4fc10730927;RU;2027-03-27;2027-04-04;School;National;RU Весенние каникулы,DE Frühlingsferien,EN Spring holidays;;
+5d401724-a3b3-47b0-ad38-124434bafd62;RU;2027-05-27;2027-08-31;School;National;RU Летние каникулы,DE Sommerferien,EN Summer holidays;;
