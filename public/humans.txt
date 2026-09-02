@@ -1,0 +1,22 @@
+/* TEAM */
+
+Project: Schulferien-Kalenderabo
+By: kalenderabos.de contributors
+Website: https://schulferien.kalenderabos.de
+
+/* THANKS */
+
+Holiday data: OpenHolidays API project
+Data source: https://github.com/openpotato/openholidaysapi.data
+Russia supplement: Ministry of Education of the Russian Federation
+Russia source: https://edu.gov.ru/press/11820/minprosvescheniya-rossii-napravilo-v-regiony-rekomendacii-po-grafiku-kanikul-v-2026-27-uchebnomu-godu/
+Data license: ODbL 1.0
+
+/* SITE */
+
+Languages: German, with multilingual calendar feeds
+Standards: HTML, CSS, JavaScript, iCalendar
+Hosting: GitHub Pages
+Software license: MIT
+Privacy: No accounts, cookies, analytics, or advertising
+Updates: Generated automatically from OpenHolidays plus documented supplements
