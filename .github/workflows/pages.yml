@@ -23,6 +23,7 @@ jobs:
       should-build: ${{ steps.compare.outputs.should-build }}
       source-commit: ${{ steps.source.outputs.commit }}
       source-tree: ${{ steps.source.outputs.tree }}
+      supplement-revision: ${{ steps.supplements.outputs.revision }}
     steps:
       - name: Check out this repository
         uses: actions/checkout@v6
@@ -39,15 +40,21 @@ jobs:
         run: |
           echo "commit=$(git -C .upstream rev-parse HEAD)" >> "$GITHUB_OUTPUT"
           echo "tree=$(git -C .upstream rev-parse HEAD:src)" >> "$GITHUB_OUTPUT"
+      - name: Fingerprint local supplements
+        id: supplements
+        shell: bash
+        run: echo "revision=$(node scripts/fingerprint-supplements.mjs)" >> "$GITHUB_OUTPUT"
       - name: Compare source data tree
         id: compare
         shell: bash
         env:
           EVENT_NAME: ${{ github.event_name }}
           SOURCE_TREE: ${{ steps.source.outputs.tree }}
+          SUPPLEMENT_REVISION: ${{ steps.supplements.outputs.revision }}
         run: |
           recorded_tree=$(node -p "require('./.github/source-state.json').sourceTreeSha || ''")
-          if [[ "$EVENT_NAME" != "schedule" || "$SOURCE_TREE" != "$recorded_tree" ]]; then
+          recorded_supplements=$(node -p "require('./.github/source-state.json').supplementRevision || ''")
+          if [[ "$EVENT_NAME" != "schedule" || "$SOURCE_TREE" != "$recorded_tree" || "$SUPPLEMENT_REVISION" != "$recorded_supplements" ]]; then
             echo "should-build=true" >> "$GITHUB_OUTPUT"
           else
             echo "should-build=false" >> "$GITHUB_OUTPUT"
@@ -79,6 +86,8 @@ jobs:
           SOURCE_TREE_SHA: ${{ needs.check-source.outputs.source-tree }}
         run: node scripts/generate-static.mjs --source .upstream
       - name: Verify generated subscriptions
+        env:
+          EXPECTED_SUPPLEMENT_REVISION: ${{ needs.check-source.outputs.supplement-revision }}
         run: node scripts/verify-static.mjs
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
@@ -121,9 +130,10 @@ jobs:
         env:
           SOURCE_COMMIT: ${{ needs.check-source.outputs.source-commit }}
           SOURCE_TREE_SHA: ${{ needs.check-source.outputs.source-tree }}
+          SUPPLEMENT_REVISION: ${{ needs.check-source.outputs.supplement-revision }}
         shell: bash
         run: |
-          node --input-type=module -e "import{writeFileSync}from'node:fs';writeFileSync('.github/source-state.json',JSON.stringify({branch:'main',sourceCommit:process.env.SOURCE_COMMIT,sourceTreeSha:process.env.SOURCE_TREE_SHA,checkedAt:new Date().toISOString()},null,2)+'\n')"
+          node --input-type=module -e "import{writeFileSync}from'node:fs';writeFileSync('.github/source-state.json',JSON.stringify({branch:'main',sourceCommit:process.env.SOURCE_COMMIT,sourceTreeSha:process.env.SOURCE_TREE_SHA,supplementRevision:process.env.SUPPLEMENT_REVISION,checkedAt:new Date().toISOString()},null,2)+'\n')"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .github/source-state.json
