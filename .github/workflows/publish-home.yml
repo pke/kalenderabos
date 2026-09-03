@@ -1,0 +1,57 @@
+name: Publish homepage
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "apps/home/**"
+      - ".github/scripts/stage-pages.sh"
+      - ".github/workflows/publish-home.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Build homepage
+        working-directory: apps/home
+        run: node scripts/build.mjs
+      - name: Update Pages state
+        id: pages-state
+        shell: bash
+        run: bash .github/scripts/stage-pages.sh apps/home/www
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ${{ steps.pages-state.outputs.artifact-directory }}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

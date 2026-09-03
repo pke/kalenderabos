@@ -1,10 +1,12 @@
-name: Build and deploy static calendars
+name: Check and publish school holiday calendars
 
 on:
   push:
-    branches: [main]
-    paths-ignore:
-      - ".github/source-state.json"
+    branches: [master]
+    paths:
+      - "apps/school-holidays/**"
+      - ".github/scripts/stage-pages.sh"
+      - ".github/workflows/pages.yml"
   schedule:
     - cron: "17 4 1 * *"
   workflow_dispatch:
@@ -43,7 +45,7 @@ jobs:
       - name: Fingerprint local supplements
         id: supplements
         shell: bash
-        run: echo "revision=$(node scripts/fingerprint-supplements.mjs)" >> "$GITHUB_OUTPUT"
+        run: echo "revision=$(node apps/school-holidays/scripts/fingerprint-supplements.mjs)" >> "$GITHUB_OUTPUT"
       - name: Compare source data tree
         id: compare
         shell: bash
@@ -64,6 +66,8 @@ jobs:
     needs: check-source
     if: needs.check-source.outputs.should-build == 'true'
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Check out this repository
         uses: actions/checkout@v6
@@ -79,22 +83,29 @@ jobs:
         with:
           node-version: 24
       - name: Run generator tests
+        working-directory: apps/school-holidays
         run: node --test
       - name: Generate static site and calendars
+        working-directory: apps/school-holidays
         env:
           SOURCE_COMMIT: ${{ needs.check-source.outputs.source-commit }}
           SOURCE_TREE_SHA: ${{ needs.check-source.outputs.source-tree }}
-        run: node scripts/generate-static.mjs --source .upstream
+        run: node scripts/generate-static.mjs --source ../../.upstream
       - name: Verify generated subscriptions
+        working-directory: apps/school-holidays
         env:
           EXPECTED_SUPPLEMENT_REVISION: ${{ needs.check-source.outputs.supplement-revision }}
         run: node scripts/verify-static.mjs
+      - name: Update Pages state
+        id: pages-state
+        shell: bash
+        run: bash .github/scripts/stage-pages.sh apps/school-holidays/www schulferien
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: www
+          path: ${{ steps.pages-state.outputs.artifact-directory }}
 
   deploy:
     needs: [check-source, build]
@@ -125,7 +136,7 @@ jobs:
       - name: Check out this repository
         uses: actions/checkout@v6
         with:
-          ref: main
+          ref: master
       - name: Record successful source check
         env:
           SOURCE_COMMIT: ${{ needs.check-source.outputs.source-commit }}
