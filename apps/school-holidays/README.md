@@ -23,7 +23,7 @@ proxy or server-side calendar generation.
   codes, German display names, and region suffixes. Feed URL components,
   generator metadata, event counts, and date coverage are deliberately omitted.
 - Every subscription URL is a static path. For example, the German calendar for
-  Saxony-Anhalt is `/feeds/de/de-st/de.ics`.
+  Saxony-Anhalt is `/schulferien/feeds/de/de-st/de.ics`.
 - Germany contains exactly 16 state calendars. No combined calendar containing
   every German state is generated.
 - Regions are generated when school holiday records reference them directly.
@@ -56,7 +56,8 @@ the 16 states and no combined Germany calendar.
 
 ## GitHub Pages
 
-The workflow in `.github/workflows/pages.yml` runs for changes to this repository,
+The workflow in [`../../.github/workflows/pages.yml`](../../.github/workflows/pages.yml)
+runs for changes to this repository,
 on demand, and monthly. For scheduled runs it compares the Git tree of the
 upstream `src/` directory with the last successfully published revision:
 
@@ -72,9 +73,9 @@ upstream `src/` directory with the last successfully published revision:
 Updating the small source-state file on every monthly check also keeps scheduled
 workflows active in a public GitHub repository.
 
-In the repository settings, select **Pages → Build and deployment → GitHub
-Actions**. At Porkbun, point the `schulferien` CNAME to
-`<github-user>.github.io`.
+The deployable `www/` directory is assembled into the homepage artifact under
+`/schulferien/`. The optional `schulferien.kalenderabos.de` hostname permanently
+redirects to that canonical path.
 
 ## Data, attribution, and license
 
@@ -87,6 +88,6 @@ license in its metadata. `www/build.json` also records the upstream commit,
 data-tree hash, supplemented countries, and the exact SHA-256 fingerprint of the
 supplemental data used by the build.
 
-The software in this repository is licensed under the [MIT License](LICENSE).
+The software in this repository is licensed under the [MIT License](../../LICENSE).
 The OpenHolidays data, locally structured supplements, and generated database
 content are made available under the ODbL.

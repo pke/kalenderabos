@@ -23,7 +23,8 @@ API-Proxy und keine serverseitige Kalendererzeugung.
   Sprachcodes, deutsche Anzeigenamen und Regionssuffixe. Feed-URL-Bestandteile,
   Generator-Metadaten, Ereigniszahlen und Zeiträume werden bewusst weggelassen.
 - Jede Abonnement-URL ist ein statischer Pfad. Der deutschsprachige Kalender für
-  Sachsen-Anhalt liegt beispielsweise unter `/feeds/de/de-st/de.ics`.
+  Sachsen-Anhalt liegt beispielsweise unter
+  `/schulferien/feeds/de/de-st/de.ics`.
 - Deutschland enthält genau die 16 Bundesland-Kalender. Eine Zusammenfassung
   aller Bundesländer wird nicht erzeugt.
 - Regionen werden erzeugt, wenn die Schuldaten sie direkt referenzieren. Sind
@@ -59,7 +60,8 @@ Deutschland-Kalender enthält.
 
 ## GitHub Pages
 
-Der Workflow `.github/workflows/pages.yml` läuft bei Änderungen an diesem
+Der Workflow [`../../.github/workflows/pages.yml`](../../.github/workflows/pages.yml)
+läuft bei Änderungen an diesem
 Repository, manuell und monatlich. Bei monatlichen Läufen vergleicht er den
 Git-Tree des Upstream-Verzeichnisses `src/` mit dem zuletzt erfolgreich
 veröffentlichten Stand:
@@ -77,9 +79,9 @@ veröffentlichten Stand:
 Das monatliche Aktualisieren der kleinen Statusdatei hält außerdem den Zeitplan
 eines öffentlichen GitHub-Repositories aktiv.
 
-In den Repository-Einstellungen muss unter **Pages → Build and deployment**
-die Quelle **GitHub Actions** gewählt werden. Bei Porkbun zeigt ein CNAME für
-`schulferien` auf `<github-benutzer>.github.io`.
+Der deploybare `www/`-Ordner wird unter `/schulferien/` in das Homepage-Artefakt
+eingebunden. Die optionale Adresse `schulferien.kalenderabos.de` leitet dauerhaft
+auf diesen kanonischen Pfad weiter.
 
 ## Daten, Attribution und Lizenz
 
@@ -92,6 +94,6 @@ Attribution und Lizenz in den Metadaten. `www/build.json` dokumentiert zusätzli
 Commit und Hash des OpenHolidays-Datentrees, verwendete Ergänzungsländer und den
 exakten SHA-256-Fingerabdruck der Ergänzungsdaten.
 
-Die Software in diesem Repository steht unter der [MIT-Lizenz](LICENSE).
+Die Software in diesem Repository steht unter der [MIT-Lizenz](../../LICENSE).
 Die OpenHolidays-Daten, die lokal aufbereiteten Ergänzungen und daraus erzeugte
 Datenbankinhalte werden unter ODbL bereitgestellt.
