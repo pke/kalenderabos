@@ -1,3 +1,36 @@
+function resetDocumentScroll() {
+  window.scrollTo(0, 0);
+  if (document.scrollingElement) document.scrollingElement.scrollTop = 0;
+}
+
+let viewportSyncFrame = 0;
+
+function syncAppViewportHeight() {
+  if (viewportSyncFrame) cancelAnimationFrame(viewportSyncFrame);
+  viewportSyncFrame = requestAnimationFrame(() => {
+    viewportSyncFrame = 0;
+    const height = window.visualViewport?.height || window.innerHeight;
+    document.documentElement.style.setProperty(
+      "--app-viewport-height",
+      `${Math.round(height)}px`,
+    );
+  });
+}
+
+function resetInitialViewport() {
+  resetDocumentScroll();
+  syncAppViewportHeight();
+  requestAnimationFrame(resetDocumentScroll);
+}
+
+resetInitialViewport();
+window.addEventListener("load", resetInitialViewport, { once: true });
+window.addEventListener("pageshow", resetInitialViewport);
+window.addEventListener("resize", syncAppViewportHeight, { passive: true });
+window.visualViewport?.addEventListener("resize", syncAppViewportHeight, {
+  passive: true,
+});
+
 const form = document.querySelector("#calendar-form");
 const countryInput = document.querySelector("#country");
 const countryOptions = document.querySelector("#country-options");
