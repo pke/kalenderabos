@@ -225,8 +225,9 @@ a {
   display: grid;
   height: var(--app-viewport-height, 100dvh);
   min-height: 0;
+  padding-top: 72px;
   padding-bottom: 0;
-  grid-template-rows: auto minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
 }
 
 .site-header {
@@ -240,6 +241,13 @@ a {
   border-bottom: 1px solid var(--chrome-line);
   background: var(--header-bg);
   backdrop-filter: blur(14px);
+}
+
+.calendar-app .site-header {
+  position: fixed;
+  top: 0;
+  right: max(20px, calc((100% - 1180px) / 2));
+  left: max(20px, calc((100% - 1180px) / 2));
 }
 
 .header-actions {
@@ -1128,8 +1136,17 @@ footer p {
     padding-inline: 14px;
   }
 
+  .calendar-app .page-shell {
+    padding-top: 64px;
+  }
+
   .site-header {
     min-height: 64px;
+  }
+
+  .calendar-app .site-header {
+    right: 14px;
+    left: 14px;
   }
 
   .source-link {
