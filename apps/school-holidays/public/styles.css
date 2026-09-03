@@ -388,8 +388,19 @@ a {
 }
 
 .calendar-app #detail-view {
+  display: flex;
+  flex-direction: column;
   overflow-y: auto;
   scrollbar-gutter: stable;
+}
+
+.calendar-app #detail-view > .configurator,
+.calendar-app #detail-view > footer {
+  flex: 0 0 auto;
+}
+
+.calendar-app #detail-view > footer {
+  margin-top: auto;
 }
 
 .calendar-app .semantic-view {
