@@ -1,0 +1,10 @@
+Use case: ads-marketing
+Asset type: Open Graph and social sharing image concept, landscape 1200x630
+Primary request: Create a polished social preview for kalenderabos.de, concept 3: a semantic-zoom inspired field of calendar tiles from overview to detail.
+Scene/backdrop: soft warm off-white with faint grid and gentle glow.
+Subject: a progression of square calendar tiles, broad category blocks on left becoming precise date cards on right, using green and coral families.
+Style/medium: crisp geometric Swiss editorial design with subtle depth and rounded corners.
+Composition/framing: dynamic diagonal zoom path across the image, headline anchored in a quiet upper-left zone.
+Color palette: #f5f2e9, #122118, #174d34, #d9f36c, #d94a2c, #ffdbcd.
+Text (verbatim): "Kalender, die aktuell bleiben." and small "kalenderabos.de"
+Constraints: spell all text exactly; no additional words; avoid tiny UI labels or fake interface text; no watermark.

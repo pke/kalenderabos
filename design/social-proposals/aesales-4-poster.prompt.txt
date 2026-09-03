@@ -1,0 +1,10 @@
+Use case: ads-marketing
+Asset type: Open Graph and social sharing image concept, landscape 1200x630
+Primary request: Create a polished social preview for the independent AliExpress sales calendar on kalenderabos.de, concept 4: a bold minimal poster of a sale period highlighted across a calendar grid.
+Scene/backdrop: deep warm brown-black background with restrained grain and coral glow.
+Subject: oversized calendar grid of rounded dark cells; one vivid coral band crosses a week; a small generic tag cutout and three-bar kalenderabos mark.
+Style/medium: bold modernist poster, high-end identity design, simple strong shapes.
+Composition/framing: calendar graphic at left, headline at right, safe margins for social cropping.
+Color palette: #1c1210, #f6ebe6, #ff7657, #ff9a80, #5b2d23.
+Text (verbatim): "AliExpress Sales im Kalender." and small "kalenderabos.de"
+Constraints: spell all text exactly; no additional words; no official AliExpress logo or logo imitation; no watermark; thumbnail legibility.

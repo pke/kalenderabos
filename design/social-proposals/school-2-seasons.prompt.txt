@@ -1,0 +1,10 @@
+Use case: ads-marketing
+Asset type: Open Graph and social sharing image concept, landscape 1200x630
+Primary request: Create a polished social preview for the school holiday calendar on kalenderabos.de, concept 2: the school year opens into four calm seasonal breaks.
+Scene/backdrop: warm cream surface with soft daylight and long architectural shadows.
+Subject: a tactile paper calendar unfolding through spring, summer, autumn and winter using simple leaf, sun, leaf and snow symbols, connected as one continuous subscription.
+Style/medium: refined paper-cut editorial illustration, precise minimal geometry.
+Composition/framing: wide horizontal seasonal calendar ribbon, strong headline in a quiet upper-left area.
+Color palette: cream, deep forest green, fresh green, lime, restrained seasonal accents.
+Text (verbatim): "Schulferien im Kalender." and small "kalenderabos.de"
+Constraints: spell all text exactly; no additional words; no children or classroom stock imagery; no watermark; clear social-safe margins.

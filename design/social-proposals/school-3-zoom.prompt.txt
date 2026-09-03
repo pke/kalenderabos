@@ -1,0 +1,10 @@
+Use case: ads-marketing
+Asset type: Open Graph and social sharing image concept, landscape 1200x630
+Primary request: Create a polished social preview for the school holiday calendar on kalenderabos.de, concept 3: semantic zoom from countries to regions to holiday dates.
+Scene/backdrop: warm off-white with faint coordinate grid.
+Subject: a cinematic progression of green tiles: large alphabet tile, country tile, regional tile, then detailed calendar dates, with one lime selection path.
+Style/medium: crisp geometric Swiss editorial design with subtle dimensional depth, matching a modern semantic-zoom web interface.
+Composition/framing: diagonal depth from broad overview on left to calendar details on right; headline above.
+Color palette: #f5f2e9, #174d34, #52cf84, #d9f36c, dark ink.
+Text (verbatim): "Schulferien im Kalender." and small "kalenderabos.de"
+Constraints: spell all text exactly; no other UI labels, letters, fake place names or numbers except simple decorative date marks; no watermark.

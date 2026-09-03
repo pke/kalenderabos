@@ -1,0 +1,10 @@
+Use case: ads-marketing
+Asset type: Open Graph and social sharing image concept, landscape 1200x630
+Primary request: Create a polished social preview for the independent AliExpress sales calendar on kalenderabos.de, concept 1: sale tags becoming calendar entries.
+Scene/backdrop: warm off-white paper background with subtle coral glow.
+Subject: a flowing ribbon of generic coral sale tags and small parcel shapes transforming into neat calendar cards; no official marketplace logo.
+Style/medium: premium editorial vector-like 3D illustration, soft tactile surfaces, rounded geometry.
+Composition/framing: headline on left, transformation ribbon on right, generous social-safe margins.
+Color palette: #f5f2e9, #211713, #d94a2c, #a42f1a, #ffdbcd, restrained deep green accent.
+Text (verbatim): "AliExpress Sales im Kalender." and small "kalenderabos.de"
+Constraints: spell all text exactly; no additional words; do not imitate the official AliExpress logo; no trademark logo; no watermark; thumbnail legibility.

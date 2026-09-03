@@ -1,0 +1,10 @@
+Use case: ads-marketing
+Asset type: Open Graph and social sharing image concept, landscape 1200x630
+Primary request: Create a polished social preview for the school holiday calendar on kalenderabos.de, concept 4: an iconic minimal poster showing empty school days automatically marked in a calendar.
+Scene/backdrop: deep green-black background with restrained grain and lime glow.
+Subject: oversized calendar grid made from rounded blocks; a flowing lime band cuts across several date cells as a continuous holiday period; small three-bar kalenderabos mark.
+Style/medium: bold modernist poster, simple shapes, high contrast, sophisticated and calm.
+Composition/framing: graphic calendar on left, headline on right, all within social-safe margins.
+Color palette: #0d1711, #eff8f1, #7cdaa3, #d9f36c.
+Text (verbatim): "Schulferien im Kalender." and small "kalenderabos.de"
+Constraints: spell all text exactly; no additional words; no third-party logos; no watermark; thumbnail legibility.

@@ -1,0 +1,10 @@
+Use case: ads-marketing
+Asset type: Open Graph and social sharing image concept, landscape 1200x630
+Primary request: Create a polished social preview for the independent AliExpress sales calendar on kalenderabos.de, concept 3: sales dates arriving automatically as a live calendar stream.
+Scene/backdrop: warm off-white with faint grid and soft coral light.
+Subject: a clean sequence of rounded coral event tiles flowing along a curved path into a white calendar card, with simple generic tag and percent symbols.
+Style/medium: crisp geometric Swiss editorial design with subtle 3D depth, modern web-service identity.
+Composition/framing: dynamic left-to-right stream, headline in a quiet upper zone, all elements inside social-safe bounds.
+Color palette: #f5f2e9, #211713, #d94a2c, #ff7657, #ffdbcd.
+Text (verbatim): "AliExpress Sales im Kalender." and small "kalenderabos.de"
+Constraints: spell all text exactly; no additional labels or fake prices; no official logos; no watermark; readable at small scale.

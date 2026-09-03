@@ -1,0 +1,10 @@
+Use case: ads-marketing
+Asset type: Open Graph and social sharing image concept, landscape 1200x630
+Primary request: Create a polished social preview for the independent AliExpress sales calendar on kalenderabos.de, concept 2: a year of big sales as an elegant paper calendar.
+Scene/backdrop: warm cream studio surface with architectural shadows.
+Subject: layered coral and cream paper calendar sheets with generic percent signs, small shopping bag silhouettes and update-loop marks distributed across months.
+Style/medium: refined tactile paper-cut editorial illustration, precise geometry, sophisticated rather than loud retail advertising.
+Composition/framing: wide central calendar stack, strong quiet headline area in upper left, safe margins.
+Color palette: cream, coral orange, burnt orange, dark brown-black, tiny forest green accent.
+Text (verbatim): "AliExpress Sales im Kalender." and small "kalenderabos.de"
+Constraints: spell all text exactly; no additional words; no official marketplace branding; no red commercial banner style; no watermark.

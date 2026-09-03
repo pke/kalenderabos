@@ -1,0 +1,10 @@
+Use case: ads-marketing
+Asset type: Open Graph and social sharing image concept, landscape 1200x630
+Primary request: Create a polished social preview for kalenderabos.de, concept 1: two calendar streams joining into one calm, organized timeline.
+Scene/backdrop: warm off-white paper background with subtle radial glows.
+Subject: abstract calendar cards, one deep forest green with lime accents for school holidays, one coral orange for sales, flowing into a single neat timeline.
+Style/medium: premium editorial vector-like 3D illustration, clean modern European web design, soft paper texture.
+Composition/framing: wide landscape, strong safe margins, visual cluster on right, text on left.
+Color palette: #f5f2e9, #174d34, #52cf84, #d9f36c, #d94a2c, #ffdbcd, dark ink.
+Text (verbatim): "Kalender, die aktuell bleiben." and small "kalenderabos.de"
+Constraints: spell all text exactly; no additional words; no official third-party logos; high legibility at thumbnail size; no watermark.

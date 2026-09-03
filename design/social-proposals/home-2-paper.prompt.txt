@@ -1,0 +1,10 @@
+Use case: ads-marketing
+Asset type: Open Graph and social sharing image concept, landscape 1200x630
+Primary request: Create a polished social preview for kalenderabos.de, concept 2: an editorial still life of stacked calendar sheets showing that updates arrive automatically.
+Scene/backdrop: warm cream studio surface, subtle architectural shadows.
+Subject: layered paper calendar cards, minimal arrow loops and small update marks, green holiday layer and coral sales layer.
+Style/medium: tactile paper-cut editorial illustration with precise geometry, refined and understated.
+Composition/framing: centered wide composition, large headline above or beside the stack, generous safe area.
+Color palette: warm cream, deep forest green, fresh lime, coral orange, dark green-black.
+Text (verbatim): "Kalender, die aktuell bleiben." and small "kalenderabos.de"
+Constraints: spell all text exactly; no additional words; no third-party logos; readable at thumbnail size; no watermark.

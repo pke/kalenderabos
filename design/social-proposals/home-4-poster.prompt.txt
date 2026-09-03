@@ -1,0 +1,10 @@
+Use case: ads-marketing
+Asset type: Open Graph and social sharing image concept, landscape 1200x630
+Primary request: Create a polished social preview for kalenderabos.de, concept 4: extremely minimal brand poster built around three rising calendar bars and two service colors.
+Scene/backdrop: deep green-black background with subtle grain and soft glow.
+Subject: oversized simple three-bar calendar mark, one lime-green rhythm and one coral-orange rhythm intersecting cleanly.
+Style/medium: bold modernist poster, high-end identity design, simple shapes, strong contrast.
+Composition/framing: large mark at left, headline at right, all elements inside social-safe margins.
+Color palette: #0d1711, #eff8f1, #d9f36c, #52cf84, #ff7657.
+Text (verbatim): "Kalender, die aktuell bleiben." and small "kalenderabos.de"
+Constraints: spell all text exactly; no additional words; no third-party logos; no watermark; must remain legible as a small share card.
