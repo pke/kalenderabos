@@ -392,10 +392,6 @@ a {
   scrollbar-gutter: stable;
 }
 
-.calendar-app #detail-view > .configurator {
-  min-height: 100%;
-}
-
 .calendar-app .semantic-view {
   display: flex;
   padding-bottom: 0;
@@ -929,13 +925,9 @@ input[type="text"]:disabled {
 }
 
 .feed-list {
-  max-height: 340px;
-  overflow: auto;
   border: 1px solid var(--line);
   border-radius: 14px;
   background: var(--surface);
-  scrollbar-color: var(--scrollbar) var(--transparent);
-  scrollbar-width: thin;
 }
 
 .feed-row {
@@ -1210,10 +1202,6 @@ footer p {
 
   .configurator {
     border-radius: 20px;
-  }
-
-  .feed-list {
-    max-height: min(52vh, 440px);
   }
 
   .semantic-overview {
