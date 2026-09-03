@@ -1,92 +1,48 @@
-# School holidays · kalenderabos.de
+# kalenderabos.de
 
 [Deutsch](README.de.md)
 
-A fully static website providing subscribable school holiday calendars generated
-from the OpenHolidays data repository and clearly labelled official supplements.
-The website and every `.ics` file are
-created ahead of time and served through GitHub Pages. Production requires no API
-proxy or server-side calendar generation.
+Monorepo for static calendar subscription services published under
+`kalenderabos.de`.
 
-## Architecture
+## Applications
 
-- Data source: the `main` branch of
-  [`openpotato/openholidaysapi.data`](https://github.com/openpotato/openholidaysapi.data)
-- Missing countries can be supplied from official sources under
-  `data/supplements/`. Upstream data automatically takes precedence as soon as
-  OpenHolidays publishes school-holiday files for a supplemented country.
-- `index.html` is a small static shell that preloads a compact `catalog.json`.
-  The browser builds only the currently visible country, region, and
-  semantic-zoom controls from that catalog; it never fetches or parses an
-  iCalendar file.
-- The UI catalog contains lowercase country codes, country-specific language
-  codes, German display names, and region suffixes. Feed URL components,
-  generator metadata, event counts, and date coverage are deliberately omitted.
-- Every subscription URL is a static path. For example, the German calendar for
-  Saxony-Anhalt is `/feeds/de/de-st/de.ics`.
-- Germany contains exactly 16 state calendars. No combined calendar containing
-  every German state is generated.
-- Regions are generated when school holiday records reference them directly.
-  Countries whose school holidays are scoped exclusively through groups expose
-  those groups as calendars; administrative members are not duplicated. This
-  reduces the Netherlands to its three official holiday regions.
-- Source end dates are inclusive; the generator converts them into the exclusive
-  `DTEND` required by iCalendar.
-- OpenHolidays event UUIDs remain unchanged; local supplements use stable UUIDs.
-- Calendars include events from the previous year through the latest date
-  available for each calendar in the source data.
+| Application | Package | Production host |
+| --- | --- | --- |
+| [Homepage](apps/home/README.md) | `@kalenderabos/home` | `kalenderabos.de` |
+| [School holidays](apps/school-holidays/README.md) | `@kalenderabos/school-holidays` | `kalenderabos.de/schulferien/` |
+| [AliExpress sales](apps/aliexpress-sales/README.md) | `@kalenderabos/aliexpress-sales` | `kalenderabos.de/aesales/` |
 
-## Build and run locally
+## Commands
 
-Requirements: Node.js 24 or newer, pnpm, and Git.
+Node.js 24 or newer, pnpm, and Git are required.
 
 ```bash
-pnpm build
+pnpm install
 pnpm test
+pnpm build
 pnpm dev
 ```
 
-`pnpm build` updates the local `main` snapshot and generates `www/`. `pnpm dev`
-serves that directory on port 8791 and prints both loopback and available LAN
-addresses.
+`pnpm build` builds only the homepage. Each calendar has its own build command
+and publication interval: `pnpm build:school-holidays` and
+`pnpm build:aliexpress-sales`. `pnpm preview:build` assembles all applications
+only for a complete local preview. `pnpm dev` serves that preview.
 
-`pnpm verify` reconstructs every static feed path from the compact UI catalog and
-checks every generated calendar. It also enforces that Germany contains exactly
-the 16 states and no combined Germany calendar.
+## Build output convention
 
-## GitHub Pages
+Every deployable application writes its complete generated site to its own
+`www/` directory, for example `apps/school-holidays/www/`. Source assets may
+live in `public/`, but generated files must never be written there. All `www/`
+directories are reproducible build artifacts and are excluded from Git.
 
-The workflow in `.github/workflows/pages.yml` runs for changes to this repository,
-on demand, and monthly. For scheduled runs it compares the Git tree of the
-upstream `src/` directory with the last successfully published revision:
+## Deployment
 
-1. If both the OpenHolidays tree and the SHA-256 fingerprint of the local
-   supplements are unchanged, calendar generation and deployment are skipped.
-2. If it changed, the local generator validates identifiers, dates, and regional
-   references while reading the upstream tables. Upstream code is never executed.
-3. A Pages artifact is published only after validation, tests, generation, and
-   project-specific verification succeed.
-4. `.github/source-state.json` is updated only after a successful deployment. A
-   failed build leaves the previous website untouched.
+The `master` branch contains source code only. GitHub Actions publishes the
+generated site to the `gh-pages` branch and deploys that branch through GitHub
+Pages. Homepage, school-holiday calendars, and AliExpress calendars are built
+independently; each workflow replaces only its own path in the persistent
+`gh-pages` site state.
 
-Updating the small source-state file on every monthly check also keeps scheduled
-workflows active in a public GitHub repository.
-
-In the repository settings, select **Pages → Build and deployment → GitHub
-Actions**. At Porkbun, point the `schulferien` CNAME to
-`<github-user>.github.io`.
-
-## Data, attribution, and license
-
-Most calendar data comes from OpenHolidays and is licensed under the ODC Open
-Database License (ODbL). For Russia, the project additionally includes the
-Russian Ministry of Education's recommended 2026/27 calendar for schools using a
-four-term system. Those dates are recommendations and individual schools may
-differ. Every generated calendar includes its concrete source, attribution, and
-license in its metadata. `www/build.json` also records the upstream commit,
-data-tree hash, supplemented countries, and the exact SHA-256 fingerprint of the
-supplemental data used by the build.
-
-The software in this repository is licensed under the [MIT License](LICENSE).
-The OpenHolidays data, locally structured supplements, and generated database
-content are made available under the ODbL.
+The software is licensed under the [MIT License](LICENSE). Each application
+documents the licenses and attribution requirements of its generated data.

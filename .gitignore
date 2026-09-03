@@ -1,6 +1,6 @@
 node_modules/
 .cache/
-www/
+**/www/
 .wrangler/
 .wrangler-dry-run/
 *.log

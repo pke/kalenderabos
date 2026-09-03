@@ -1,16 +1,20 @@
 {
-  "name": "schulferien-kalenderabos-de",
-  "version": "1.0.0",
+  "name": "kalenderabos",
   "private": true,
-  "type": "module",
   "packageManager": "pnpm@11.19.0",
   "scripts": {
-    "sync:data": "node scripts/sync-data.mjs",
-    "generate": "node scripts/generate-static.mjs",
-    "fingerprint:supplements": "node scripts/fingerprint-supplements.mjs",
-    "verify": "node scripts/verify-static.mjs",
-    "build": "pnpm sync:data && pnpm generate && pnpm verify",
-    "dev": "node scripts/dev-server.mjs",
-    "test": "node --test"
+    "build": "pnpm build:home",
+    "preview:build": "pnpm -r --if-present build && pnpm --filter @kalenderabos/home assemble",
+    "test": "pnpm -r --if-present test",
+    "dev": "pnpm --filter @kalenderabos/home dev",
+    "dev:home": "pnpm --filter @kalenderabos/home dev",
+    "dev:school-holidays": "pnpm --filter @kalenderabos/school-holidays dev",
+    "build:home": "pnpm --filter @kalenderabos/home build",
+    "build:aliexpress-sales": "pnpm --filter @kalenderabos/aliexpress-sales build",
+    "build:school-holidays": "pnpm --filter @kalenderabos/school-holidays build",
+    "sync:data": "pnpm --filter @kalenderabos/school-holidays sync:data",
+    "generate": "pnpm --filter @kalenderabos/school-holidays generate",
+    "fingerprint:supplements": "pnpm --filter @kalenderabos/school-holidays fingerprint:supplements",
+    "verify": "pnpm --filter @kalenderabos/school-holidays verify"
   }
 }
