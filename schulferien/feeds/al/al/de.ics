@@ -1,0 +1,83 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//kalenderabos.de//Schulferien Kalenderabo//DE
+NAME:Schulferien - Albanien
+X-WR-CALNAME:Schulferien - Albanien
+DESCRIPTION:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHolidays
+  · Lizenz: ODbL 1.0
+X-WR-CALDESC:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHoliday
+ s · Lizenz: ODbL 1.0
+SOURCE;VALUE=URI:https://kalenderabos.de/schulferien/feeds/al/al/de.ics
+URL:https://kalenderabos.de/schulferien
+REFRESH-INTERVAL;VALUE=DURATION:P1M
+X-PUBLISHED-TTL:P1M
+X-SOURCE-REVISION:65673ec67926c7819deac742ed78ae548d83272c
+BEGIN:VEVENT
+UID:874845ad-3186-47cf-8a7b-c586bc24b9e4
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20241223
+DTEND;VALUE=DATE:20250104
+SUMMARY;LANGUAGE=DE:Weihnachtsferien – Albanien
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:672b4f64-f582-4111-9ef0-6b4314d869ad
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250331
+DTEND;VALUE=DATE:20250405
+SUMMARY;LANGUAGE=DE:Frühlingsferien – Albanien
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ff690169-a86c-4751-bcb9-54ac820b4898
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250613
+DTEND;VALUE=DATE:20250909
+SUMMARY;LANGUAGE=DE:Sommerferien – Albanien
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:307ae188-5b47-4451-9482-457fdfca26db
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20251222
+DTEND;VALUE=DATE:20260103
+SUMMARY;LANGUAGE=DE:Weihnachtsferien – Albanien
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:af6073d1-98ec-4242-9a93-165d2ea98fe1
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260330
+DTEND;VALUE=DATE:20260404
+SUMMARY;LANGUAGE=DE:Frühlingsferien – Albanien
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:34e50e69-e4ca-4fa1-93e4-dc9c56102c23
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260613
+DTEND;VALUE=DATE:20260614
+SUMMARY;LANGUAGE=DE:Unterrichtsende – Albanien
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

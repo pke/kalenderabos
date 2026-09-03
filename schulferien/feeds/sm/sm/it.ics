@@ -1,0 +1,83 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//kalenderabos.de//Schulferien Kalenderabo//DE
+NAME:Schulferien - San Marino
+X-WR-CALNAME:Schulferien - San Marino
+DESCRIPTION:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHolidays
+  · Lizenz: ODbL 1.0
+X-WR-CALDESC:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHoliday
+ s · Lizenz: ODbL 1.0
+SOURCE;VALUE=URI:https://kalenderabos.de/schulferien/feeds/sm/sm/it.ics
+URL:https://kalenderabos.de/schulferien
+REFRESH-INTERVAL;VALUE=DURATION:P1M
+X-PUBLISHED-TTL:P1M
+X-SOURCE-REVISION:65673ec67926c7819deac742ed78ae548d83272c
+BEGIN:VEVENT
+UID:7244675e-c956-4d8f-8ee5-1f1afd23f8f0
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20241223
+DTEND;VALUE=DATE:20250106
+SUMMARY;LANGUAGE=IT:Vacanze Natalizie – San Marino
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:35bf93fe-b414-46e7-959d-f218b7aeef64
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250417
+DTEND;VALUE=DATE:20250423
+SUMMARY;LANGUAGE=IT:Vacanze Pasquali – San Marino
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:59377195-3279-4ffc-8f57-d107bd7c2d13
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250611
+DTEND;VALUE=DATE:20250915
+SUMMARY;LANGUAGE=IT:Vacanze Estive – San Marino
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:69637832-d890-4572-bb82-f5d1426fe9ea
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20251224
+DTEND;VALUE=DATE:20260106
+SUMMARY;LANGUAGE=IT:Vacanze Natalizie – San Marino
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2a7da015-e7ee-49bb-b162-b1bc70815b8c
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260402
+DTEND;VALUE=DATE:20260408
+SUMMARY;LANGUAGE=IT:Vacanze Pasquali – San Marino
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:3d9f8169-164a-4534-8749-7b31b14b6fb5
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260617
+DTEND;VALUE=DATE:20260618
+SUMMARY;LANGUAGE=IT:Termine lezioni – San Marino
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

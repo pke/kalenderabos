@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Abonniere Schulferien als automatisch aktualisierten iCalendar von kalenderabos.de."
+    />
+    <link rel="canonical" href="https://kalenderabos.de/schulferien/" />
+    <link rel="author" href="./humans.txt" />
+    <title>Schulferien abonnieren · kalenderabos.de</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preload" href="./catalog.json" as="fetch" crossorigin />
+    <script src="./app.js" type="module"></script>
+  </head>
+  <body class="calendar-app">
+    <input
+      type="checkbox"
+      id="themeswitch"
+      class="visually-hidden"
+      role="switch"
+      aria-label="Zwischen hellem und dunklem Design wechseln"
+    />
+    <script>
+      (function () {
+        var control = document.getElementById("themeswitch");
+        var osDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          var savedTheme = window.localStorage.getItem("kalenderabos-theme");
+          if (savedTheme === "dark" || savedTheme === "light") {
+            control.checked = (savedTheme === "dark") !== osDark;
+          }
+        } catch {}
+        control.addEventListener("change", function () {
+          try {
+            window.localStorage.setItem(
+              "kalenderabos-theme",
+              osDark !== control.checked ? "dark" : "light",
+            );
+          } catch {}
+        });
+      })();
+    </script>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="header-identity">
+          <a class="brand" href="../" aria-label="kalenderabos.de Startseite">
+            <span class="brand-mark" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </span>
+            <span class="brand-name">kalenderabos.de</span>
+          </a>
+          <h1 class="product-name">Schulferienkalender</h1>
+        </div>
+        <div class="header-actions">
+          <label
+            for="themeswitch"
+            class="theme-toggle"
+            aria-hidden="true"
+            title="Farbschema wechseln"
+          >◐</label>
+        </div>
+      </header>
+
+      <div class="semantic-zoom-controls" aria-label="Semantic Zoom">
+        <span id="semantic-zoom-label">Länderindex</span>
+        <button
+          type="button"
+          id="semantic-zoom-out"
+          aria-label="Eine Ebene herauszoomen"
+          aria-keyshortcuts="-"
+          title="Eine Ebene herauszoomen (−)"
+          disabled
+        >−</button>
+        <button
+          type="button"
+          id="semantic-zoom-in"
+          aria-label="Eine Ebene hineinzoomen"
+          aria-keyshortcuts="+"
+          title="Eine Ebene hineinzoomen (+)"
+          disabled
+        >+</button>
+      </div>
+
+      <main class="app-main">
+        <div id="detail-view" hidden>
+          <section class="configurator" aria-label="Ferienkalender konfigurieren">
+            <form id="calendar-form">
+              <div class="field-grid">
+                <label class="field" id="country-field">
+                  <span>Land</span>
+                  <input
+                    id="country"
+                    name="country"
+                    type="text"
+                    list="country-options"
+                    autocomplete="country-name"
+                    placeholder="Länder werden geladen …"
+                    required
+                    disabled
+                  />
+                  <datalist id="country-options"></datalist>
+                </label>
+
+                <fieldset class="field option-field" id="language-field" disabled>
+                  <legend>Kalendersprache</legend>
+                  <div class="option-grid option-grid-compact" id="language-options"></div>
+                </fieldset>
+              </div>
+
+              <p class="form-status" id="form-status" role="status" aria-live="polite">
+                Ferienkalender werden geladen …
+              </p>
+
+              <section class="feed-section" id="feed-section" aria-labelledby="feed-heading" hidden>
+                <div class="feed-list-head">
+                  <div>
+                    <p class="feed-title" id="feed-heading">Verfügbare Ferienkalender</p>
+                  </div>
+                  <span id="feed-count"></span>
+                </div>
+                <div class="feed-tools" id="feed-tools" hidden>
+                  <label class="feed-filter">
+                    <span>Kalender filtern</span>
+                    <input
+                      id="feed-filter"
+                      type="search"
+                      placeholder="Name eingeben …"
+                      autocomplete="off"
+                    />
+                  </label>
+                  <nav
+                    class="feed-index"
+                    id="feed-index"
+                    aria-label="Schnellzugriff nach Anfangsbuchstaben"
+                  ></nav>
+                </div>
+                <p class="feed-empty" id="feed-empty" hidden>
+                  Keine passenden Kalender gefunden.
+                </p>
+                <div class="feed-list" id="feed-list"></div>
+              </section>
+            </form>
+          </section>
+        </div>
+
+        <section
+          class="semantic-view"
+          id="semantic-view"
+          aria-label="Ferienkalender auswählen"
+        >
+          <div class="semantic-scroll" id="semantic-scroll">
+            <div
+              class="semantic-overview"
+              id="semantic-overview"
+              aria-live="polite"
+            ></div>
+
+            <footer id="site-footer">
+              <p>Open-Data-Kalender · monatlich geprüft · kein Benutzerkonto</p>
+              <div class="footer-links">
+                <p>
+                  Daten unter ODbL, bereitgestellt von
+                  <a
+                    href="https://www.openholidaysapi.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >OpenHolidays</a>
+                  und amtlichen Ergänzungsquellen.
+                </p>
+                <a href="./datenschutz.html">Datenschutz</a>
+              </div>
+            </footer>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </body>
+</html>

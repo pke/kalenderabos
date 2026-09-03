@@ -1,0 +1,226 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//kalenderabos.de//Schulferien Kalenderabo//DE
+NAME:Schulferien - Lucerne
+X-WR-CALNAME:Schulferien - Lucerne
+DESCRIPTION:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHolidays
+  · Lizenz: ODbL 1.0
+X-WR-CALDESC:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHoliday
+ s · Lizenz: ODbL 1.0
+SOURCE;VALUE=URI:https://kalenderabos.de/schulferien/feeds/ch/ch-lu/en.ics
+URL:https://kalenderabos.de/schulferien
+REFRESH-INTERVAL;VALUE=DURATION:P1M
+X-PUBLISHED-TTL:P1M
+X-SOURCE-REVISION:65673ec67926c7819deac742ed78ae548d83272c
+BEGIN:VEVENT
+UID:4d974cf2-84a2-4de4-8c49-f3c70d0936ea
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20241221
+DTEND;VALUE=DATE:20250106
+SUMMARY;LANGUAGE=EN:Christmas holidays – Lucerne
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:74c58d14-0b0f-4032-b099-267f83be2f49
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250222
+DTEND;VALUE=DATE:20250310
+SUMMARY;LANGUAGE=EN:Carnival holidays – Lucerne
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7634be9a-fa1d-4c22-92e9-918e6de28279
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250418
+DTEND;VALUE=DATE:20250505
+SUMMARY;LANGUAGE=EN:Spring holidays – Lucerne
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4b99d87b-1ec0-498f-9ffe-c7e13ad79115
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250705
+DTEND;VALUE=DATE:20250818
+SUMMARY;LANGUAGE=EN:Summer holidays – Lucerne
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f91a120d-cd36-4fb5-af3a-3491832d63c3
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250927
+DTEND;VALUE=DATE:20251013
+SUMMARY;LANGUAGE=EN:Autumn holidays – Lucerne
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:19143f74-1e56-4a96-a168-e2842c46fc8b
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20251220
+DTEND;VALUE=DATE:20260105
+SUMMARY;LANGUAGE=EN:Christmas holidays – Lucerne
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1891d826-9e88-4a57-832b-cc84969afea2
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260207
+DTEND;VALUE=DATE:20260223
+SUMMARY;LANGUAGE=EN:Carnival holidays – Lucerne
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:145b3a26-566f-43b2-85df-b91e0be88393
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260403
+DTEND;VALUE=DATE:20260420
+SUMMARY;LANGUAGE=EN:Spring holidays – Lucerne
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:048f0bc2-12f0-4bcf-ab87-42dcc41672f7
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260704
+DTEND;VALUE=DATE:20260817
+SUMMARY;LANGUAGE=EN:Summer holidays – Lucerne
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a1178819-bc37-4d86-9c2c-02aac6da6b6c
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20261012
+SUMMARY;LANGUAGE=EN:Autumn holidays – Lucerne
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1c7a0d5c-f7c4-4060-8466-78df2daac6a5
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20270104
+SUMMARY;LANGUAGE=EN:Christmas holidays – Lucerne
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bb78e96c-f3a1-478a-ad0a-68b40605a38f
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20270130
+DTEND;VALUE=DATE:20270215
+SUMMARY;LANGUAGE=EN:Carnival holidays – Lucerne
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:989e9911-8705-4f76-b1a2-3f69e76fed81
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20270326
+DTEND;VALUE=DATE:20270412
+SUMMARY;LANGUAGE=EN:Spring holidays – Lucerne
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6ec7b886-a602-4f31-b14e-6a3a5f29d155
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20270703
+DTEND;VALUE=DATE:20270816
+SUMMARY;LANGUAGE=EN:Summer holidays – Lucerne
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1a3f289b-af20-411a-a590-e9c7593b77ed
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20270925
+DTEND;VALUE=DATE:20271011
+SUMMARY;LANGUAGE=EN:Autumn holidays – Lucerne
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:df3a9e63-f74e-4363-b0a0-6d251c472b08
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20271218
+DTEND;VALUE=DATE:20280103
+SUMMARY;LANGUAGE=EN:Christmas holidays – Lucerne
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1a7cde0e-4e7a-415d-a945-6aa021cb971e
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20280219
+DTEND;VALUE=DATE:20280306
+SUMMARY;LANGUAGE=EN:Carnival holidays – Lucerne
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f7067831-c8ca-4792-8c79-fc96b7b8f020
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20280414
+DTEND;VALUE=DATE:20280501
+SUMMARY;LANGUAGE=EN:Spring holidays – Lucerne
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:3308ae9e-c2b3-48e1-8897-a12dde6201df
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20280708
+DTEND;VALUE=DATE:20280821
+SUMMARY;LANGUAGE=EN:Summer holidays – Lucerne
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

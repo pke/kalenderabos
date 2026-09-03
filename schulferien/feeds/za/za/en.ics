@@ -1,0 +1,226 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//kalenderabos.de//Schulferien Kalenderabo//DE
+NAME:Schulferien - South Africa
+X-WR-CALNAME:Schulferien - South Africa
+DESCRIPTION:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHolidays
+  · Lizenz: ODbL 1.0
+X-WR-CALDESC:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHoliday
+ s · Lizenz: ODbL 1.0
+SOURCE;VALUE=URI:https://kalenderabos.de/schulferien/feeds/za/za/en.ics
+URL:https://kalenderabos.de/schulferien
+REFRESH-INTERVAL;VALUE=DURATION:P1M
+X-PUBLISHED-TTL:P1M
+X-SOURCE-REVISION:65673ec67926c7819deac742ed78ae548d83272c
+BEGIN:VEVENT
+UID:fac41a06-66b9-4052-842a-44c2beebc394
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20241214
+DTEND;VALUE=DATE:20250113
+SUMMARY;LANGUAGE=EN:Summer Break – South Africa
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:9d128a30-0252-4c79-a1d1-58a36f2e8dc2
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250329
+DTEND;VALUE=DATE:20250408
+SUMMARY;LANGUAGE=EN:Autumn Break – South Africa
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:8cd3b542-65d0-4814-9201-e3ee9de441b6
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250429
+DTEND;VALUE=DATE:20250430
+SUMMARY;LANGUAGE=EN:Special School Holiday – South Africa
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:78cac1f4-9dd6-4ee5-af69-ce389b14ec52
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250430
+DTEND;VALUE=DATE:20250501
+SUMMARY;LANGUAGE=EN:Special School Holiday – South Africa
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a1e900f7-12e7-4dbd-b766-7b5170497b9a
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250602
+DTEND;VALUE=DATE:20250603
+SUMMARY;LANGUAGE=EN:Special School Holiday – South Africa
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:b7520184-1087-493c-9e47-eeba3f989006
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250628
+DTEND;VALUE=DATE:20250722
+SUMMARY;LANGUAGE=EN:Winter Break – South Africa
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:46913ccf-9f08-41c8-a27e-60972a2d3bd0
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20251004
+DTEND;VALUE=DATE:20251013
+SUMMARY;LANGUAGE=EN:Spring Break – South Africa
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:964df868-5fdc-4206-bfcc-16048c02ab3d
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20251213
+DTEND;VALUE=DATE:20260112
+SUMMARY;LANGUAGE=EN:Summer Break – South Africa
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:37aa0d15-2729-465f-9907-8ab6483489de
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260328
+DTEND;VALUE=DATE:20260408
+SUMMARY;LANGUAGE=EN:Autumn Break – South Africa
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6c838c4f-021d-4b5f-bde4-d8ef35d6f544
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260615
+DTEND;VALUE=DATE:20260616
+SUMMARY;LANGUAGE=EN:Special School Holiday – South Africa
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6314f2fd-c992-437c-a15f-87d2e0ff7b28
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260627
+DTEND;VALUE=DATE:20260721
+SUMMARY;LANGUAGE=EN:Winter Break – South Africa
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:780c8f96-a285-4551-a3d6-d30077cf4086
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY;LANGUAGE=EN:Special School Holiday – South Africa
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cbb2e8bd-36d5-4792-b8fc-5b7938080286
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261013
+SUMMARY;LANGUAGE=EN:Spring Break – South Africa
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5f1af263-105c-4d11-a02c-37de2fab66dd
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20270111
+SUMMARY;LANGUAGE=EN:Summer Break – South Africa
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:907ffdfd-8bbf-40f3-8638-4c0f5dce5bef
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270406
+SUMMARY;LANGUAGE=EN:Autumn Break – South Africa
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:92139951-0433-4cdb-97c0-d1234aadcf07
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20270426
+DTEND;VALUE=DATE:20270427
+SUMMARY;LANGUAGE=EN:Special School Holiday – South Africa
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:221ff170-3986-4f0b-ad42-bba5bc71f6b7
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20270626
+DTEND;VALUE=DATE:20270720
+SUMMARY;LANGUAGE=EN:Winter Break – South Africa
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:41450a01-656a-45c6-8856-883c628a9bd7
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20271002
+DTEND;VALUE=DATE:20271011
+SUMMARY;LANGUAGE=EN:Spring Break – South Africa
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:50c1e169-f120-4896-8eb3-feeb6f9249ee
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20271211
+DTEND;VALUE=DATE:20280110
+SUMMARY;LANGUAGE=EN:Summer Break – South Africa
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

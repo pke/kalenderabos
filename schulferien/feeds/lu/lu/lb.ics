@@ -1,0 +1,204 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//kalenderabos.de//Schulferien Kalenderabo//DE
+NAME:Schulferien - Lëtzebuerg
+X-WR-CALNAME:Schulferien - Lëtzebuerg
+DESCRIPTION:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHolidays
+  · Lizenz: ODbL 1.0
+X-WR-CALDESC:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHoliday
+ s · Lizenz: ODbL 1.0
+SOURCE;VALUE=URI:https://kalenderabos.de/schulferien/feeds/lu/lu/lb.ics
+URL:https://kalenderabos.de/schulferien
+REFRESH-INTERVAL;VALUE=DURATION:P1M
+X-PUBLISHED-TTL:P1M
+X-SOURCE-REVISION:65673ec67926c7819deac742ed78ae548d83272c
+BEGIN:VEVENT
+UID:94a439b6-3317-4325-9215-510374dc1c65
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20241221
+DTEND;VALUE=DATE:20250106
+SUMMARY;LANGUAGE=LB:Chrëschtdag Vakanz – Lëtzebuerg
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7bb7beb4-9639-497a-8127-3d2f0f4c81b3
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250215
+DTEND;VALUE=DATE:20250224
+SUMMARY;LANGUAGE=LB:Karneval Vakanz – Lëtzebuerg
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:17e9602f-fefc-4fb7-89d9-e74ab014b0b2
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250405
+DTEND;VALUE=DATE:20250421
+SUMMARY;LANGUAGE=LB:Ouschtervakanz – Lëtzebuerg
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:456693a7-304b-4dba-bc92-b39a00d78dd9
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250524
+DTEND;VALUE=DATE:20250602
+SUMMARY;LANGUAGE=LB:Päischtfeierdeeg – Lëtzebuerg
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:3b28a683-ff65-4464-8879-437b6e887ec4
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250716
+DTEND;VALUE=DATE:20250915
+SUMMARY;LANGUAGE=LB:Grouss Vakanz – Lëtzebuerg
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:eea87bc0-83f4-47bf-95be-bd87171a88e2
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20251101
+DTEND;VALUE=DATE:20251110
+SUMMARY;LANGUAGE=LB:Allerhellgen Vakanz – Lëtzebuerg
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:364e6bc6-ad0b-4ddb-a1b0-cae7edb33c46
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20251220
+DTEND;VALUE=DATE:20260105
+SUMMARY;LANGUAGE=LB:Chrëschtdag Vakanz – Lëtzebuerg
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a9416d19-87d9-4610-a101-c4f9f6ea21d8
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260214
+DTEND;VALUE=DATE:20260223
+SUMMARY;LANGUAGE=LB:Karneval Vakanz – Lëtzebuerg
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4a313b71-0e0c-4a12-bc92-9b854069e319
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260328
+DTEND;VALUE=DATE:20260413
+SUMMARY;LANGUAGE=LB:Ouschtervakanz – Lëtzebuerg
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f2c93ae1-14c8-460f-a694-598b2574e62a
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260523
+DTEND;VALUE=DATE:20260601
+SUMMARY;LANGUAGE=LB:Päischtfeierdeeg – Lëtzebuerg
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:471cedeb-bec6-4aa3-8ab7-64119ed7a25c
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260716
+DTEND;VALUE=DATE:20260915
+SUMMARY;LANGUAGE=LB:Grouss Vakanz – Lëtzebuerg
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2fc0573c-2b47-4e67-80ff-f04b4a4714fb
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261109
+SUMMARY;LANGUAGE=LB:Allerhellgen Vakanz – Lëtzebuerg
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7518b09c-10d2-4291-aa01-37d09eb028c7
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20270104
+SUMMARY;LANGUAGE=LB:Chrëschtdag Vakanz – Lëtzebuerg
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:b0c2e75e-1a9a-44fb-865c-ad55f1bab739
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270215
+SUMMARY;LANGUAGE=LB:Karneval Vakanz – Lëtzebuerg
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bed67dd3-fd43-4c8a-a737-1fab2dcad86b
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20270327
+DTEND;VALUE=DATE:20270412
+SUMMARY;LANGUAGE=LB:Ouschtervakanz – Lëtzebuerg
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c89c917c-c1eb-478d-955a-0cb25584fa2f
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20270529
+DTEND;VALUE=DATE:20270607
+SUMMARY;LANGUAGE=LB:Päischtfeierdeeg – Lëtzebuerg
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:8673d187-f415-41d4-8f9a-8ae8bd48b446
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20270716
+DTEND;VALUE=DATE:20270915
+SUMMARY;LANGUAGE=LB:Grouss Vakanz – Lëtzebuerg
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

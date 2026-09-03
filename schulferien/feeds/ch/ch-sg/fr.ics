@@ -1,0 +1,226 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//kalenderabos.de//Schulferien Kalenderabo//DE
+NAME:Schulferien - Saint-Gall
+X-WR-CALNAME:Schulferien - Saint-Gall
+DESCRIPTION:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHolidays
+  · Lizenz: ODbL 1.0
+X-WR-CALDESC:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHoliday
+ s · Lizenz: ODbL 1.0
+SOURCE;VALUE=URI:https://kalenderabos.de/schulferien/feeds/ch/ch-sg/fr.ics
+URL:https://kalenderabos.de/schulferien
+REFRESH-INTERVAL;VALUE=DURATION:P1M
+X-PUBLISHED-TTL:P1M
+X-SOURCE-REVISION:65673ec67926c7819deac742ed78ae548d83272c
+BEGIN:VEVENT
+UID:e86caf3c-dc93-455b-b97f-b07bd710b749
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20241222
+DTEND;VALUE=DATE:20250106
+SUMMARY;LANGUAGE=FR:Vacances de Noël – Saint-Gall
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6c53abc3-0856-4374-abcd-a86d9d7f1736
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250406
+DTEND;VALUE=DATE:20250421
+SUMMARY;LANGUAGE=FR:Vacances de printemps – Saint-Gall
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5e1d8b1d-1557-46f8-94b4-5cc3fa533de2
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250706
+DTEND;VALUE=DATE:20250811
+SUMMARY;LANGUAGE=FR:Vacances d'été – Saint-Gall
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:acfe8e10-004e-4238-9e81-fc5006e5a70b
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250928
+DTEND;VALUE=DATE:20251020
+SUMMARY;LANGUAGE=FR:Vacances d'automne – Saint-Gall
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:8ef4ec84-bb2a-459c-9d59-d63c8601b3f3
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20251221
+DTEND;VALUE=DATE:20260105
+SUMMARY;LANGUAGE=FR:Vacances de Noël – Saint-Gall
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6f307fe8-491b-40c9-9fe0-d6aedce73b58
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260405
+DTEND;VALUE=DATE:20260420
+SUMMARY;LANGUAGE=FR:Vacances de printemps – Saint-Gall
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:9f50bde3-582f-411f-870d-52186e4a1dea
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260705
+DTEND;VALUE=DATE:20260810
+SUMMARY;LANGUAGE=FR:Vacances d'été – Saint-Gall
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4d6cb071-c819-4d56-a4eb-ee78a8444e15
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260927
+DTEND;VALUE=DATE:20261019
+SUMMARY;LANGUAGE=FR:Vacances d'automne – Saint-Gall
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:011f2c11-fd8d-4358-ac30-a83c106882fb
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20270104
+SUMMARY;LANGUAGE=FR:Vacances de Noël – Saint-Gall
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:71551f0e-e9ea-4a79-b9a9-ad00f1b78e7d
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20270411
+DTEND;VALUE=DATE:20270426
+SUMMARY;LANGUAGE=FR:Vacances de printemps – Saint-Gall
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fb1b47d4-d9bd-4161-9427-8313d1f32e84
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20270711
+DTEND;VALUE=DATE:20270816
+SUMMARY;LANGUAGE=FR:Vacances d'été – Saint-Gall
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:35814e7c-f863-4dc6-83fd-4a36da5f849a
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20271003
+DTEND;VALUE=DATE:20271025
+SUMMARY;LANGUAGE=FR:Vacances d'automne – Saint-Gall
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5365287d-7cd0-47e7-9476-7bcd2dd43052
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20271219
+DTEND;VALUE=DATE:20280103
+SUMMARY;LANGUAGE=FR:Vacances de Noël – Saint-Gall
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dfb919ab-d963-4960-9eb0-151ffb07ac3d
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20280409
+DTEND;VALUE=DATE:20280424
+SUMMARY;LANGUAGE=FR:Vacances de printemps – Saint-Gall
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:110f8f36-f84d-4102-812e-69dd3c1554ed
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20280709
+DTEND;VALUE=DATE:20280814
+SUMMARY;LANGUAGE=FR:Vacances d'été – Saint-Gall
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:8870b0bd-b11a-4bec-81dc-4a0cd26f3c5d
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20281001
+DTEND;VALUE=DATE:20281023
+SUMMARY;LANGUAGE=FR:Vacances d'automne – Saint-Gall
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:06910ff2-e612-4cf6-aff4-e21d681baec0
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20281224
+DTEND;VALUE=DATE:20290108
+SUMMARY;LANGUAGE=FR:Vacances de Noël – Saint-Gall
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a96f9d77-e2c3-4728-8d9f-80c79cf95e66
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20290408
+DTEND;VALUE=DATE:20290423
+SUMMARY;LANGUAGE=FR:Vacances de printemps – Saint-Gall
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20eb8b5d-e55c-4d8f-b55b-5a1df1ce5de1
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20290708
+DTEND;VALUE=DATE:20290813
+SUMMARY;LANGUAGE=FR:Vacances d'été – Saint-Gall
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,226 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//kalenderabos.de//Schulferien Kalenderabo//DE
+NAME:Schulferien - Landesbezirk Nitra
+X-WR-CALNAME:Schulferien - Landesbezirk Nitra
+DESCRIPTION:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHolidays
+  · Lizenz: ODbL 1.0
+X-WR-CALDESC:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHoliday
+ s · Lizenz: ODbL 1.0
+SOURCE;VALUE=URI:https://kalenderabos.de/schulferien/feeds/sk/sk-ni/de.ics
+URL:https://kalenderabos.de/schulferien
+REFRESH-INTERVAL;VALUE=DURATION:P1M
+X-PUBLISHED-TTL:P1M
+X-SOURCE-REVISION:65673ec67926c7819deac742ed78ae548d83272c
+BEGIN:VEVENT
+UID:bfa9d212-0024-4859-b23b-b50adcad3554
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20241223
+DTEND;VALUE=DATE:20250108
+SUMMARY;LANGUAGE=DE:Weihnachtsferien – Landesbezirk Nitra
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:00d70e5f-8756-4920-857c-a4a11af62ff5
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250224
+DTEND;VALUE=DATE:20250301
+SUMMARY;LANGUAGE=DE:Frühjahrsferien – Landesbezirk Nitra
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6fa01ac8-cf23-4161-ae8a-817f47e8509f
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250417
+DTEND;VALUE=DATE:20250423
+SUMMARY;LANGUAGE=DE:Osterferien – Landesbezirk Nitra
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:062e5c50-ad61-40a9-963b-2fc271ae040e
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250628
+DTEND;VALUE=DATE:20250902
+SUMMARY;LANGUAGE=DE:Sommerferien – Landesbezirk Nitra
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4accb7fb-9b16-43a7-a956-0e44927de558
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20251030
+DTEND;VALUE=DATE:20251101
+SUMMARY;LANGUAGE=DE:Herbstferien – Landesbezirk Nitra
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c0b48986-28ca-4bbd-9b90-a5125e469253
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20251222
+DTEND;VALUE=DATE:20260108
+SUMMARY;LANGUAGE=DE:Weihnachtsferien – Landesbezirk Nitra
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6a52d0fd-4202-403e-8442-0d41f848c9ce
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260216
+DTEND;VALUE=DATE:20260221
+SUMMARY;LANGUAGE=DE:Frühjahrsferien – Landesbezirk Nitra
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bd2353b1-71ca-4437-9839-25127a48bdc9
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260402
+DTEND;VALUE=DATE:20260408
+SUMMARY;LANGUAGE=DE:Osterferien – Landesbezirk Nitra
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:b35b3003-65a6-4f6d-8f4d-4b7d7df2230f
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260901
+SUMMARY;LANGUAGE=DE:Sommerferien – Landesbezirk Nitra
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bc02aaf5-bda0-4234-b042-d949db9ef597
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261031
+SUMMARY;LANGUAGE=DE:Herbstferien – Landesbezirk Nitra
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e0be6e23-01d6-4ba8-8139-c6510e726e6e
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20270108
+SUMMARY;LANGUAGE=DE:Weihnachtsferien – Landesbezirk Nitra
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:920a1e59-0eb2-41bc-9f43-ff05b558c6f6
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270306
+SUMMARY;LANGUAGE=DE:Frühjahrsferien – Landesbezirk Nitra
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f5d7c364-f8c1-4990-afce-0038384cd04a
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20270325
+DTEND;VALUE=DATE:20270331
+SUMMARY;LANGUAGE=DE:Osterferien – Landesbezirk Nitra
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:66d61d95-f68f-4387-8da3-08a692e51596
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20270701
+DTEND;VALUE=DATE:20270901
+SUMMARY;LANGUAGE=DE:Sommerferien – Landesbezirk Nitra
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:79a68a1f-925a-4c79-bd8e-b78a4346c5d7
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20271028
+DTEND;VALUE=DATE:20271030
+SUMMARY;LANGUAGE=DE:Herbstferien – Landesbezirk Nitra
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:015face5-ef77-4dd8-a34d-6a4c9c09304e
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20271223
+DTEND;VALUE=DATE:20280108
+SUMMARY;LANGUAGE=DE:Weihnachtsferien – Landesbezirk Nitra
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:21eb5b64-3112-4f53-a8b1-8e75d2afb91e
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20280228
+DTEND;VALUE=DATE:20280304
+SUMMARY;LANGUAGE=DE:Frühjahrsferien – Landesbezirk Nitra
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:65901d31-d1b9-4d27-8ec4-0ff5083e5ae9
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20280413
+DTEND;VALUE=DATE:20280419
+SUMMARY;LANGUAGE=DE:Osterferien – Landesbezirk Nitra
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:99e17620-9a20-482d-9552-de2807fe87a5
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20280703
+DTEND;VALUE=DATE:20280902
+SUMMARY;LANGUAGE=DE:Sommerferien – Landesbezirk Nitra
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

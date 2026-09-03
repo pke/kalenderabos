@@ -1,0 +1,105 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//kalenderabos.de//Schulferien Kalenderabo//DE
+NAME:Schulferien - Lombardei
+X-WR-CALNAME:Schulferien - Lombardei
+DESCRIPTION:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHolidays
+  · Lizenz: ODbL 1.0
+X-WR-CALDESC:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHoliday
+ s · Lizenz: ODbL 1.0
+SOURCE;VALUE=URI:https://kalenderabos.de/schulferien/feeds/it/it-lo/de.ics
+URL:https://kalenderabos.de/schulferien
+REFRESH-INTERVAL;VALUE=DURATION:P1M
+X-PUBLISHED-TTL:P1M
+X-SOURCE-REVISION:65673ec67926c7819deac742ed78ae548d83272c
+BEGIN:VEVENT
+UID:6b5d47c9-550c-4d36-8eea-32ccbc6a817c
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20241223
+DTEND;VALUE=DATE:20250107
+SUMMARY;LANGUAGE=DE:Weihnachtsferien – Lombardei
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:871fb1d9-1745-48ae-96b6-7c4ab4530351
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250303
+DTEND;VALUE=DATE:20250305
+SUMMARY;LANGUAGE=DE:bewegliche Ferientage – Lombardei
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:65dddc80-38ef-493f-9ee5-e242d90d011b
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250417
+DTEND;VALUE=DATE:20250422
+SUMMARY;LANGUAGE=DE:Osterferien – Lombardei
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a8827f22-07ac-4f12-a137-7aa354d92f73
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250608
+DTEND;VALUE=DATE:20250912
+SUMMARY;LANGUAGE=DE:Sommerferien – Lombardei
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:936aacdf-e53d-4258-b5c7-9a53e2370cfa
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20251223
+DTEND;VALUE=DATE:20260107
+SUMMARY;LANGUAGE=DE:Weihnachtsferien – Lombardei
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:d72492bd-bd6d-4e7a-8d5a-44558e256ec0
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260216
+DTEND;VALUE=DATE:20260218
+SUMMARY;LANGUAGE=DE:bewegliche Ferientage – Lombardei
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7f1f6ced-7779-4059-8f2c-ac63dc1047ce
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260402
+DTEND;VALUE=DATE:20260408
+SUMMARY;LANGUAGE=DE:Osterferien – Lombardei
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:94c4353f-d88f-4757-814a-18ba09425329
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260608
+DTEND;VALUE=DATE:20260609
+SUMMARY;LANGUAGE=DE:Unterrichtsende – Lombardei
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

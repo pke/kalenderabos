@@ -1,0 +1,127 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//kalenderabos.de//Schulferien Kalenderabo//DE
+NAME:Schulferien - Melilla
+X-WR-CALNAME:Schulferien - Melilla
+DESCRIPTION:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHolidays
+  · Lizenz: ODbL 1.0
+X-WR-CALDESC:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHoliday
+ s · Lizenz: ODbL 1.0
+SOURCE;VALUE=URI:https://kalenderabos.de/schulferien/feeds/es/es-ml/de.ics
+URL:https://kalenderabos.de/schulferien
+REFRESH-INTERVAL;VALUE=DURATION:P1M
+X-PUBLISHED-TTL:P1M
+X-SOURCE-REVISION:65673ec67926c7819deac742ed78ae548d83272c
+BEGIN:VEVENT
+UID:1ab43b06-1b7f-4948-b583-2ca86cf7b784
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20241223
+DTEND;VALUE=DATE:20250108
+SUMMARY;LANGUAGE=DE:Weihnachtsferien – Melilla
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e0e9a861-527f-48d0-ac9c-f3a36eaaafd3
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250407
+DTEND;VALUE=DATE:20250412
+SUMMARY;LANGUAGE=DE:Schulfreie Tage – Melilla
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f8e0e52a-d0a6-4e5b-bc19-394d53178b62
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250414
+DTEND;VALUE=DATE:20250419
+SUMMARY;LANGUAGE=DE:Osterferien – Melilla
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a10ca557-f0cf-42d0-b22f-bfe5df7cc6e7
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250502
+DTEND;VALUE=DATE:20250503
+SUMMARY;LANGUAGE=DE:Schulfreier Tag – Melilla
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dd821609-08f3-4a00-8282-d94bb655cf23
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250624
+DTEND;VALUE=DATE:20250910
+SUMMARY;LANGUAGE=DE:Sommerferien – Melilla
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:744ec800-2a8e-466d-b658-12579543e058
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20251220
+DTEND;VALUE=DATE:20260108
+SUMMARY;LANGUAGE=DE:Weihnachtsferien – Melilla
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:08afc7df-97b8-4017-b452-1e4d5cc45323
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260323
+DTEND;VALUE=DATE:20260328
+SUMMARY;LANGUAGE=DE:Schulfreie Tage – Melilla
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:00926bf2-640c-469a-98e5-264dc47cd004
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260330
+DTEND;VALUE=DATE:20260402
+SUMMARY;LANGUAGE=DE:Osterferien – Melilla
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a71b08e7-aa80-4bfb-aded-f26cf2655dc2
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260502
+DTEND;VALUE=DATE:20260503
+SUMMARY;LANGUAGE=DE:Schulfreier Tag – Melilla
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20ae5084-a06b-4da3-95cd-7be474accb6f
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260619
+DTEND;VALUE=DATE:20260620
+SUMMARY;LANGUAGE=DE:Unterrichtsende – Melilla
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

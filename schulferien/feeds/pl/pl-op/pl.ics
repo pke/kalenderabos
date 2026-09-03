@@ -1,0 +1,105 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//kalenderabos.de//Schulferien Kalenderabo//DE
+NAME:Schulferien - Opolskie
+X-WR-CALNAME:Schulferien - Opolskie
+DESCRIPTION:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHolidays
+  · Lizenz: ODbL 1.0
+X-WR-CALDESC:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHoliday
+ s · Lizenz: ODbL 1.0
+SOURCE;VALUE=URI:https://kalenderabos.de/schulferien/feeds/pl/pl-op/pl.ics
+URL:https://kalenderabos.de/schulferien
+REFRESH-INTERVAL;VALUE=DURATION:P1M
+X-PUBLISHED-TTL:P1M
+X-SOURCE-REVISION:65673ec67926c7819deac742ed78ae548d83272c
+BEGIN:VEVENT
+UID:30f2046e-9c4b-4bbd-b82a-d1c77119cbf8
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250203
+DTEND;VALUE=DATE:20250217
+SUMMARY;LANGUAGE=PL:Ferie zimowe – Opolskie
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cb8d0fc0-bee8-4115-8c12-c34647118a40
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250417
+DTEND;VALUE=DATE:20250423
+SUMMARY;LANGUAGE=PL:Wiosenna przerwa świąteczna – Opolskie
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1c47ec0e-8907-424c-9388-b9982decde8c
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250628
+DTEND;VALUE=DATE:20250901
+SUMMARY;LANGUAGE=PL:Ferie letnie – Opolskie
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f70dba15-b026-4cf3-bde6-cb2c9c54d12c
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20251222
+DTEND;VALUE=DATE:20260101
+SUMMARY;LANGUAGE=PL:Zimowa przerwa świąteczna – Opolskie
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a0e8fb52-78b2-449f-a8ea-569897188cf9
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260202
+DTEND;VALUE=DATE:20260216
+SUMMARY;LANGUAGE=PL:Ferie zimowe – Opolskie
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:3beac5c5-9e58-44f8-a728-f0044989b4e2
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260402
+DTEND;VALUE=DATE:20260408
+SUMMARY;LANGUAGE=PL:Wiosenna przerwa świąteczna – Opolskie
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:123916df-17df-4b03-9ddf-c8a68a6896e7
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260627
+DTEND;VALUE=DATE:20260901
+SUMMARY;LANGUAGE=PL:Ferie letnie – Opolskie
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:eba154bb-e173-478c-ba75-78e4fd12f682
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270201
+SUMMARY;LANGUAGE=PL:Ferie zimowe – Opolskie
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

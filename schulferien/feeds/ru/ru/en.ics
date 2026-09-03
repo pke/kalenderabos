@@ -1,0 +1,91 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//kalenderabos.de//Schulferien Kalenderabo//DE
+NAME:Schulferien - Russia
+X-WR-CALNAME:Schulferien - Russia
+DESCRIPTION:Bereitgestellt von kalenderabos.de · Datenquelle: Ministry of 
+ Education of the Russian Federation · Nationwide recommendation for schoo
+ ls using a four-term system\; individual schools may differ. · Lizenz: OD
+ bL 1.0
+X-WR-CALDESC:Bereitgestellt von kalenderabos.de · Datenquelle: Ministry of
+  Education of the Russian Federation · Nationwide recommendation for scho
+ ols using a four-term system\; individual schools may differ. · Lizenz: O
+ DbL 1.0
+SOURCE;VALUE=URI:https://kalenderabos.de/schulferien/feeds/ru/ru/en.ics
+URL:https://kalenderabos.de/schulferien
+REFRESH-INTERVAL;VALUE=DURATION:P1M
+X-PUBLISHED-TTL:P1M
+X-SOURCE-REVISION:65673ec67926c7819deac742ed78ae548d83272c
+BEGIN:VEVENT
+UID:10916079-e54e-43bc-8903-b5900d16b2dd
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261104
+SUMMARY;LANGUAGE=EN:Autumn holidays – Russia
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: Ministry of Ed
+ ucation of the Russian Federation (https://edu.gov.ru/press/11820/minprosv
+ escheniya-rossii-napravilo-v-regiony-rekomendacii-po-grafiku-kanikul-v-202
+ 6-27-uchebnomu-godu/)\nHinweis: Nationwide recommendation for schools usin
+ g a four-term system\; individual schools may differ.\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:232b6970-054f-472e-a3df-e08f6f541feb
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270111
+SUMMARY;LANGUAGE=EN:Winter holidays – Russia
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: Ministry of Ed
+ ucation of the Russian Federation (https://edu.gov.ru/press/11820/minprosv
+ escheniya-rossii-napravilo-v-regiony-rekomendacii-po-grafiku-kanikul-v-202
+ 6-27-uchebnomu-godu/)\nHinweis: Nationwide recommendation for schools usin
+ g a four-term system\; individual schools may differ.\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:b69789ff-4efe-4c66-85dc-2c47a0c89b67
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20270215
+DTEND;VALUE=DATE:20270222
+SUMMARY;LANGUAGE=EN:Additional holidays (first grade) – Russia
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: Ministry of Ed
+ ucation of the Russian Federation (https://edu.gov.ru/press/11820/minprosv
+ escheniya-rossii-napravilo-v-regiony-rekomendacii-po-grafiku-kanikul-v-202
+ 6-27-uchebnomu-godu/)\nHinweis: Nationwide recommendation for schools usin
+ g a four-term system\; individual schools may differ.\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c4cd1300-7638-442e-b45f-e4fc10730927
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20270327
+DTEND;VALUE=DATE:20270405
+SUMMARY;LANGUAGE=EN:Spring holidays – Russia
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: Ministry of Ed
+ ucation of the Russian Federation (https://edu.gov.ru/press/11820/minprosv
+ escheniya-rossii-napravilo-v-regiony-rekomendacii-po-grafiku-kanikul-v-202
+ 6-27-uchebnomu-godu/)\nHinweis: Nationwide recommendation for schools usin
+ g a four-term system\; individual schools may differ.\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5d401724-a3b3-47b0-ad38-124434bafd62
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20270527
+DTEND;VALUE=DATE:20270901
+SUMMARY;LANGUAGE=EN:Summer holidays – Russia
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: Ministry of Ed
+ ucation of the Russian Federation (https://edu.gov.ru/press/11820/minprosv
+ escheniya-rossii-napravilo-v-regiony-rekomendacii-po-grafiku-kanikul-v-202
+ 6-27-uchebnomu-godu/)\nHinweis: Nationwide recommendation for schools usin
+ g a four-term system\; individual schools may differ.\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

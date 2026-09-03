@@ -1,0 +1,226 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//kalenderabos.de//Schulferien Kalenderabo//DE
+NAME:Schulferien - Landesbezirk Žilina
+X-WR-CALNAME:Schulferien - Landesbezirk Žilina
+DESCRIPTION:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHolidays
+  · Lizenz: ODbL 1.0
+X-WR-CALDESC:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHoliday
+ s · Lizenz: ODbL 1.0
+SOURCE;VALUE=URI:https://kalenderabos.de/schulferien/feeds/sk/sk-zi/de.ics
+URL:https://kalenderabos.de/schulferien
+REFRESH-INTERVAL;VALUE=DURATION:P1M
+X-PUBLISHED-TTL:P1M
+X-SOURCE-REVISION:65673ec67926c7819deac742ed78ae548d83272c
+BEGIN:VEVENT
+UID:bfa9d212-0024-4859-b23b-b50adcad3554
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20241223
+DTEND;VALUE=DATE:20250108
+SUMMARY;LANGUAGE=DE:Weihnachtsferien – Landesbezirk Žilina
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:35d169bd-88dd-46a4-8eac-d2862cd82a5c
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250303
+DTEND;VALUE=DATE:20250308
+SUMMARY;LANGUAGE=DE:Frühjahrsferien – Landesbezirk Žilina
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6fa01ac8-cf23-4161-ae8a-817f47e8509f
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250417
+DTEND;VALUE=DATE:20250423
+SUMMARY;LANGUAGE=DE:Osterferien – Landesbezirk Žilina
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:062e5c50-ad61-40a9-963b-2fc271ae040e
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250628
+DTEND;VALUE=DATE:20250902
+SUMMARY;LANGUAGE=DE:Sommerferien – Landesbezirk Žilina
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4accb7fb-9b16-43a7-a956-0e44927de558
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20251030
+DTEND;VALUE=DATE:20251101
+SUMMARY;LANGUAGE=DE:Herbstferien – Landesbezirk Žilina
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c0b48986-28ca-4bbd-9b90-a5125e469253
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20251222
+DTEND;VALUE=DATE:20260108
+SUMMARY;LANGUAGE=DE:Weihnachtsferien – Landesbezirk Žilina
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:37c820a7-83e4-4521-b3cb-94e769120612
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260223
+DTEND;VALUE=DATE:20260228
+SUMMARY;LANGUAGE=DE:Frühjahrsferien – Landesbezirk Žilina
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bd2353b1-71ca-4437-9839-25127a48bdc9
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260402
+DTEND;VALUE=DATE:20260408
+SUMMARY;LANGUAGE=DE:Osterferien – Landesbezirk Žilina
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:b35b3003-65a6-4f6d-8f4d-4b7d7df2230f
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260901
+SUMMARY;LANGUAGE=DE:Sommerferien – Landesbezirk Žilina
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bc02aaf5-bda0-4234-b042-d949db9ef597
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261031
+SUMMARY;LANGUAGE=DE:Herbstferien – Landesbezirk Žilina
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e0be6e23-01d6-4ba8-8139-c6510e726e6e
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20270108
+SUMMARY;LANGUAGE=DE:Weihnachtsferien – Landesbezirk Žilina
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6cf13766-762d-41e3-9cf0-134a9f138e0c
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20270215
+DTEND;VALUE=DATE:20270220
+SUMMARY;LANGUAGE=DE:Frühjahrsferien – Landesbezirk Žilina
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f5d7c364-f8c1-4990-afce-0038384cd04a
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20270325
+DTEND;VALUE=DATE:20270331
+SUMMARY;LANGUAGE=DE:Osterferien – Landesbezirk Žilina
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:66d61d95-f68f-4387-8da3-08a692e51596
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20270701
+DTEND;VALUE=DATE:20270901
+SUMMARY;LANGUAGE=DE:Sommerferien – Landesbezirk Žilina
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:79a68a1f-925a-4c79-bd8e-b78a4346c5d7
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20271028
+DTEND;VALUE=DATE:20271030
+SUMMARY;LANGUAGE=DE:Herbstferien – Landesbezirk Žilina
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:015face5-ef77-4dd8-a34d-6a4c9c09304e
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20271223
+DTEND;VALUE=DATE:20280108
+SUMMARY;LANGUAGE=DE:Weihnachtsferien – Landesbezirk Žilina
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:35e89bf8-2d2f-4ed6-a5e0-e316415ab38e
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20280306
+DTEND;VALUE=DATE:20280311
+SUMMARY;LANGUAGE=DE:Frühjahrsferien – Landesbezirk Žilina
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:65901d31-d1b9-4d27-8ec4-0ff5083e5ae9
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20280413
+DTEND;VALUE=DATE:20280419
+SUMMARY;LANGUAGE=DE:Osterferien – Landesbezirk Žilina
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:99e17620-9a20-482d-9552-de2807fe87a5
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20280703
+DTEND;VALUE=DATE:20280902
+SUMMARY;LANGUAGE=DE:Sommerferien – Landesbezirk Žilina
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

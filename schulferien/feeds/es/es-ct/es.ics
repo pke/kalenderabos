@@ -1,0 +1,83 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//kalenderabos.de//Schulferien Kalenderabo//DE
+NAME:Schulferien - Catalunya
+X-WR-CALNAME:Schulferien - Catalunya
+DESCRIPTION:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHolidays
+  · Lizenz: ODbL 1.0
+X-WR-CALDESC:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHoliday
+ s · Lizenz: ODbL 1.0
+SOURCE;VALUE=URI:https://kalenderabos.de/schulferien/feeds/es/es-ct/es.ics
+URL:https://kalenderabos.de/schulferien
+REFRESH-INTERVAL;VALUE=DURATION:P1M
+X-PUBLISHED-TTL:P1M
+X-SOURCE-REVISION:65673ec67926c7819deac742ed78ae548d83272c
+BEGIN:VEVENT
+UID:85d025e7-c194-46e1-ae32-3a7650037267
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20241221
+DTEND;VALUE=DATE:20250108
+SUMMARY;LANGUAGE=ES:Vacaciones de Navidad – Catalunya
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db19ad31-b808-4b99-b5c3-448a2ac61621
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250412
+DTEND;VALUE=DATE:20250422
+SUMMARY;LANGUAGE=ES:Vacaciones de Semana Santa – Catalunya
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2adf61d0-475a-4b2e-90e5-95ca2afa17fc
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250619
+DTEND;VALUE=DATE:20250908
+SUMMARY;LANGUAGE=ES:Vacaciones de verano – Catalunya
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:9e3e9c68-f0b9-4edf-ada7-8595bea48f97
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20251220
+DTEND;VALUE=DATE:20260108
+SUMMARY;LANGUAGE=ES:Vacaciones de Navidad – Catalunya
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:54b487e7-f6fe-46b2-9de7-8e30b6caa6f0
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260328
+DTEND;VALUE=DATE:20260407
+SUMMARY;LANGUAGE=ES:Vacaciones de Semana Santa – Catalunya
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dad90cda-aa7c-49e1-83f8-ee69d509f945
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260619
+DTEND;VALUE=DATE:20260620
+SUMMARY;LANGUAGE=ES:Fin de lecciones – Catalunya
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

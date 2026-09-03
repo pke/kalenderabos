@@ -1,0 +1,83 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//kalenderabos.de//Schulferien Kalenderabo//DE
+NAME:Schulferien - Emilia-Romagna
+X-WR-CALNAME:Schulferien - Emilia-Romagna
+DESCRIPTION:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHolidays
+  · Lizenz: ODbL 1.0
+X-WR-CALDESC:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHoliday
+ s · Lizenz: ODbL 1.0
+SOURCE;VALUE=URI:https://kalenderabos.de/schulferien/feeds/it/it-er/de.ics
+URL:https://kalenderabos.de/schulferien
+REFRESH-INTERVAL;VALUE=DURATION:P1M
+X-PUBLISHED-TTL:P1M
+X-SOURCE-REVISION:65673ec67926c7819deac742ed78ae548d83272c
+BEGIN:VEVENT
+UID:d5aeb249-576b-4297-a34f-71161f1c8dc0
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20241224
+DTEND;VALUE=DATE:20250107
+SUMMARY;LANGUAGE=DE:Weihnachtsferien – Emilia-Romagna
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:53679018-e03e-42fd-a1a4-eec31eaa7fd9
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250417
+DTEND;VALUE=DATE:20250423
+SUMMARY;LANGUAGE=DE:Osterferien – Emilia-Romagna
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:931d1f69-8284-4976-882a-ab8cf3db57e1
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250607
+DTEND;VALUE=DATE:20250915
+SUMMARY;LANGUAGE=DE:Sommerferien – Emilia-Romagna
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:3bd44f06-90f1-48bb-99e8-3403faa35cac
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20251224
+DTEND;VALUE=DATE:20260107
+SUMMARY;LANGUAGE=DE:Weihnachtsferien – Emilia-Romagna
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7f1f6ced-7779-4059-8f2c-ac63dc1047ce
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260402
+DTEND;VALUE=DATE:20260408
+SUMMARY;LANGUAGE=DE:Osterferien – Emilia-Romagna
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:9fc6257a-d308-4be0-8347-911eeeb46e56
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260606
+DTEND;VALUE=DATE:20260607
+SUMMARY;LANGUAGE=DE:Unterrichtsende – Emilia-Romagna
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

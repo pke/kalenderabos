@@ -1,0 +1,138 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//kalenderabos.de//Schulferien Kalenderabo//DE
+NAME:Schulferien - Martinique
+X-WR-CALNAME:Schulferien - Martinique
+DESCRIPTION:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHolidays
+  · Lizenz: ODbL 1.0
+X-WR-CALDESC:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHoliday
+ s · Lizenz: ODbL 1.0
+SOURCE;VALUE=URI:https://kalenderabos.de/schulferien/feeds/fr/fr-mq/fr.ics
+URL:https://kalenderabos.de/schulferien
+REFRESH-INTERVAL;VALUE=DURATION:P1M
+X-PUBLISHED-TTL:P1M
+X-SOURCE-REVISION:65673ec67926c7819deac742ed78ae548d83272c
+BEGIN:VEVENT
+UID:6e78f943-41e5-4bdf-8d41-ce50ec87191a
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20241222
+DTEND;VALUE=DATE:20250106
+SUMMARY;LANGUAGE=FR:Vacances de Noël – Martinique
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:eef3a6e2-ad73-47e4-b081-0a44dbfe4732
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250223
+DTEND;VALUE=DATE:20250310
+SUMMARY;LANGUAGE=FR:Vacances de Carnaval – Martinique
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2dce2c1c-821d-4d7b-90e1-7a55b004b4a8
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250413
+DTEND;VALUE=DATE:20250428
+SUMMARY;LANGUAGE=FR:Vacances de Pâques – Martinique
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:0b2caf95-f3c2-42b8-856f-98a2919d9674
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250530
+DTEND;VALUE=DATE:20250601
+SUMMARY;LANGUAGE=FR:Pas de cours – Martinique
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5de65749-9ceb-47cc-a81e-f3f34e9d5fc1
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250706
+DTEND;VALUE=DATE:20250901
+SUMMARY;LANGUAGE=FR:Vacances d'été – Martinique
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:082d5002-6ee8-48b6-8d85-f9d3cecf6aa0
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20251019
+DTEND;VALUE=DATE:20251103
+SUMMARY;LANGUAGE=FR:Vacances de la Toussaint – Martinique
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bf2b0730-ee31-41f2-a85f-44e1dac61cc3
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20251221
+DTEND;VALUE=DATE:20260105
+SUMMARY;LANGUAGE=FR:Vacances de Noël – Martinique
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2bec8cb2-b585-4106-8b02-6d5d6f3764ac
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260208
+DTEND;VALUE=DATE:20260223
+SUMMARY;LANGUAGE=FR:Vacances de Carnaval – Martinique
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:9c0b1813-6eb9-4dd1-b513-50968c8f52d1
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260328
+DTEND;VALUE=DATE:20260413
+SUMMARY;LANGUAGE=FR:Vacances de Pâques – Martinique
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4a773faf-5f53-416b-ac9d-589dfe0a77dc
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260515
+DTEND;VALUE=DATE:20260517
+SUMMARY;LANGUAGE=FR:Pas de cours – Martinique
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:3fd6d155-32ed-4130-9e8c-aed6a557789d
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260704
+DTEND;VALUE=DATE:20260705
+SUMMARY;LANGUAGE=FR:Fin des cours – Martinique
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

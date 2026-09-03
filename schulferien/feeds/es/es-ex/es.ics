@@ -1,0 +1,149 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//kalenderabos.de//Schulferien Kalenderabo//DE
+NAME:Schulferien - Extremadura
+X-WR-CALNAME:Schulferien - Extremadura
+DESCRIPTION:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHolidays
+  · Lizenz: ODbL 1.0
+X-WR-CALDESC:Bereitgestellt von kalenderabos.de · Datenquelle: OpenHoliday
+ s · Lizenz: ODbL 1.0
+SOURCE;VALUE=URI:https://kalenderabos.de/schulferien/feeds/es/es-ex/es.ics
+URL:https://kalenderabos.de/schulferien
+REFRESH-INTERVAL;VALUE=DURATION:P1M
+X-PUBLISHED-TTL:P1M
+X-SOURCE-REVISION:65673ec67926c7819deac742ed78ae548d83272c
+BEGIN:VEVENT
+UID:dcf7f892-e861-4fb4-86b4-8d0e51e1131b
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20241223
+DTEND;VALUE=DATE:20250108
+SUMMARY;LANGUAGE=ES:Vacaciones de Navidad – Extremadura
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:b89e60bd-969b-4b2d-82d7-7a99f7f81f9a
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250303
+DTEND;VALUE=DATE:20250305
+SUMMARY;LANGUAGE=ES:Carnavales – Extremadura
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dd472998-edea-4721-8d4d-5346995b480e
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250414
+DTEND;VALUE=DATE:20250422
+SUMMARY;LANGUAGE=ES:Vacaciones de Pascua – Extremadura
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:411f239e-2fb4-4dd5-ad7e-1abc6b2b1927
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250502
+DTEND;VALUE=DATE:20250503
+SUMMARY;LANGUAGE=ES:Día no lectivo – Extremadura
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:8349f232-274e-4101-a966-7ebe831ad0fd
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20250624
+DTEND;VALUE=DATE:20250911
+SUMMARY;LANGUAGE=ES:Vacaciones de verano – Extremadura
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:9f5bac1e-825c-4626-a3d7-e6a591e0b889
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20251121
+DTEND;VALUE=DATE:20251122
+SUMMARY;LANGUAGE=ES:Día no lectivo – Extremadura
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:9930b4bc-5738-421e-ad69-7efb68909b7c
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20251127
+DTEND;VALUE=DATE:20251128
+SUMMARY;LANGUAGE=ES:Día no lectivo – Extremadura
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:d1b16b8f-c1e4-496a-9832-3aaea65c769b
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20251128
+DTEND;VALUE=DATE:20251129
+SUMMARY;LANGUAGE=ES:Día no lectivo – Extremadura
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7dcdc88f-0de9-4d8e-bcdb-a6152ffa1345
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20251223
+DTEND;VALUE=DATE:20260108
+SUMMARY;LANGUAGE=ES:Vacaciones de Navidad – Extremadura
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2967b25b-fe3c-4121-8db2-0189e49bc21e
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260216
+DTEND;VALUE=DATE:20260218
+SUMMARY;LANGUAGE=ES:Carnavales – Extremadura
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cd4fc853-d886-497f-9991-32a3dd673640
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260330
+DTEND;VALUE=DATE:20260407
+SUMMARY;LANGUAGE=ES:Vacaciones de Pascua – Extremadura
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f5af1749-ac96-46f4-b037-7534e7f9abb7
+DTSTAMP:20260903T144617Z
+DTSTART;VALUE=DATE:20260723
+DTEND;VALUE=DATE:20260724
+SUMMARY;LANGUAGE=ES:Fin de lecciones – Extremadura
+DESCRIPTION:Bereitgestellt von kalenderabos.de\nDatenquelle: OpenHolidays (
+ https://github.com/openpotato/openholidaysapi.data)\nLizenz: ODbL 1.0
+URL:https://kalenderabos.de/schulferien
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
