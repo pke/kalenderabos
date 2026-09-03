@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Datenschutzhinweise für kalenderabos.de." />
+    <link rel="canonical" href="https://kalenderabos.de/datenschutz.html" />
+    <title>Datenschutz · kalenderabos.de</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <input
+      type="checkbox"
+      id="themeswitch"
+      class="visually-hidden"
+      role="switch"
+      aria-label="Zwischen hellem und dunklem Design wechseln"
+    />
+    <script>
+      (function () {
+        var control = document.getElementById("themeswitch");
+        var osDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          var savedTheme = window.localStorage.getItem("kalenderabos-theme");
+          if (savedTheme === "dark" || savedTheme === "light") {
+            control.checked = (savedTheme === "dark") !== osDark;
+          }
+        } catch {}
+        control.addEventListener("change", function () {
+          try {
+            window.localStorage.setItem(
+              "kalenderabos-theme",
+              osDark !== control.checked ? "dark" : "light",
+            );
+          } catch {}
+        });
+      })();
+    </script>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="/" aria-label="Zur Startseite">
+          <span class="brand-mark" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+          <span>kalenderabos.de</span>
+        </a>
+        <label
+          for="themeswitch"
+          class="theme-toggle"
+          aria-hidden="true"
+          title="Farbschema wechseln"
+        >◐</label>
+      </header>
+
+      <main class="legal-main">
+        <p class="eyebrow">Stand 3. September 2026</p>
+        <h1>Datenschutz</h1>
+        <div class="legal-content">
+          <section>
+            <h2>Verantwortlich</h2>
+            <p><a href="mailto:privacy@dudesoft.app">privacy@dudesoft.app</a></p>
+          </section>
+          <section>
+            <h2>Beim Aufruf</h2>
+            <p>
+              Website und Kalenderdateien liegen bei GitHub Pages. Beim Abruf
+              erhält GitHub technische Daten wie IP-Adresse, Zeitpunkt,
+              angeforderte Datei und Angaben zum Browser oder Kalenderprogramm.
+            </p>
+          </section>
+          <section>
+            <h2>Lokale Auswahl</h2>
+            <p>
+              Es werden keine Benutzerkonten, Cookies, Analysen oder
+              Nutzungsprofile verwendet.
+            </p>
+          </section>
+          <section>
+            <h2>Rechte</h2>
+            <p>
+              Auskunft, Berichtigung, Löschung, Einschränkung oder Widerspruch
+              können über die oben genannte Adresse verlangt werden.
+            </p>
+          </section>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <p>Kalender-Abos als statische, stabile Links.</p>
+        <a href="/">Zur Startseite</a>
+      </footer>
+    </div>
+  </body>
+</html>

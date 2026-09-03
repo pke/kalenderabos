@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Aktuelle Termine als abonnierbare Kalender: Schulferien und AliExpress Sales von kalenderabos.de."
+    />
+    <link rel="canonical" href="https://kalenderabos.de" />
+    <link rel="author" href="/humans.txt" />
+    <title>Kalender, die aktuell bleiben · kalenderabos.de</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <input
+      type="checkbox"
+      id="themeswitch"
+      class="visually-hidden"
+      role="switch"
+      aria-label="Zwischen hellem und dunklem Design wechseln"
+    />
+    <script>
+      (function () {
+        var control = document.getElementById("themeswitch");
+        var osDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          var savedTheme = window.localStorage.getItem("kalenderabos-theme");
+          if (savedTheme === "dark" || savedTheme === "light") {
+            control.checked = (savedTheme === "dark") !== osDark;
+          }
+        } catch {}
+        control.addEventListener("change", function () {
+          try {
+            window.localStorage.setItem(
+              "kalenderabos-theme",
+              osDark !== control.checked ? "dark" : "light",
+            );
+          } catch {}
+        });
+      })();
+    </script>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="/" aria-label="kalenderabos.de Startseite">
+          <span class="brand-mark" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+          <span>kalenderabos.de</span>
+        </a>
+        <div class="header-actions">
+          <p class="header-note">Statisch · offen · abonnierbar</p>
+          <label
+            for="themeswitch"
+            class="theme-toggle"
+            aria-hidden="true"
+            title="Farbschema wechseln"
+          >◐</label>
+        </div>
+      </header>
+
+      <main>
+        <section class="landing" aria-labelledby="page-title">
+          <div class="intro">
+            <p class="eyebrow">Termine ohne Nachtragen</p>
+            <h1 id="page-title">Kalender, die aktuell bleiben.</h1>
+            <p class="lede">
+              Einmal abonnieren. Änderungen erscheinen automatisch im gewohnten
+              Kalender – ohne Konto und ohne zusätzliche App.
+            </p>
+            <div class="principles" aria-label="Eigenschaften">
+              <span>Direkte Kalender-URL</span>
+              <span>Regelmäßig geprüft</span>
+              <span>Keine Cookies</span>
+            </div>
+          </div>
+
+          <section class="services" aria-labelledby="services-heading">
+            <div class="section-head">
+              <h2 id="services-heading">Kalender auswählen</h2>
+              <span>2 verfügbar</span>
+            </div>
+
+            <div class="service-grid">
+              <a class="service-card holidays" href="/schulferien/">
+                <div class="card-topline">
+                  <span class="service-number">01</span>
+                  <span class="service-status">Open Data</span>
+                </div>
+                <div>
+                  <p class="service-kind">Ferienkalender</p>
+                  <h3>Schulferien</h3>
+                  <p>Ferientermine nach Land und Region in der passenden Sprache.</p>
+                </div>
+                <span class="card-action">
+                  Ferienkalender wählen <span aria-hidden="true">↗</span>
+                </span>
+              </a>
+
+              <article class="service-card sales">
+                <div class="card-topline">
+                  <span class="service-number">02</span>
+                  <span class="service-status">Monatlich geprüft</span>
+                </div>
+                <div>
+                  <p class="service-kind">Aktionskalender</p>
+                  <h3><a class="card-title-link" href="/aesales">AliExpress Sales</a></h3>
+                  <p>Große Verkaufsaktionen und Angebotszeiträume im Kalender.</p>
+                </div>
+                <nav class="sales-actions" aria-label="AliExpress Sales-Kalender">
+                  <a href="/aesales.ics" download>Download</a>
+                  <a
+                    href="https://calendar.google.com/calendar/r?cid=webcal%3A%2F%2Fkalenderabos.de%2Faesales.ics"
+                    target="_blank"
+                    rel="noopener"
+                  >Google Calendar</a>
+                  <a class="primary" href="webcal://kalenderabos.de/aesales.ics">Abo</a>
+                </nav>
+              </article>
+            </div>
+
+            <details class="manual-setup">
+              <summary>Manuell einrichten</summary>
+              <div class="manual-setup-content">
+                <p>
+                  Falls der Abo-Link nicht direkt öffnet, die Kalender-URL
+                  kopieren und im Kalenderprogramm hinzufügen.
+                </p>
+                <ol>
+                  <li><strong>Apple Kalender:</strong> Neues Kalenderabonnement anlegen.</li>
+                  <li><strong>Google Calendar:</strong> „Weitere Kalender“ → „Per URL“.</li>
+                  <li><strong>Outlook:</strong> „Kalender hinzufügen“ → „Aus dem Web“.</li>
+                </ol>
+              </div>
+            </details>
+          </section>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Kalender-Abos als statische, stabile Links.</p>
+        <nav aria-label="Rechtliches">
+          <a href="/datenschutz.html">Datenschutz</a>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>
