@@ -246,8 +246,9 @@ a {
 .calendar-app .site-header {
   position: fixed;
   top: 0;
-  right: max(20px, calc((100% - 1180px) / 2));
-  left: max(20px, calc((100% - 1180px) / 2));
+  right: 0;
+  left: 0;
+  padding-inline: max(20px, calc((100% - 1180px) / 2));
 }
 
 .header-actions {
@@ -1145,8 +1146,7 @@ footer p {
   }
 
   .calendar-app .site-header {
-    right: 14px;
-    left: 14px;
+    padding-inline: 14px;
   }
 
   .source-link {
