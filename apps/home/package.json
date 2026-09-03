@@ -1,0 +1,11 @@
+{
+  "name": "@kalenderabos/home",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "assemble": "node scripts/assemble.mjs",
+    "dev": "node scripts/dev-server.mjs"
+  }
+}

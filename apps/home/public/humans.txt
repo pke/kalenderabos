@@ -1,0 +1,6 @@
+kalenderabos.de
+
+Kalender-Abos ohne Konto, Tracking oder serverseitige Personalisierung.
+
+Schulferien-Daten: OpenHolidays und dokumentierte amtliche Ergänzungen
+AliExpress-Sales-Daten: en.ali-shop.net/sales
