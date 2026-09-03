@@ -133,20 +133,59 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Check out this repository
-        uses: actions/checkout@v6
-        with:
-          ref: master
       - name: Record successful source check
+        uses: actions/github-script@v9
         env:
           SOURCE_COMMIT: ${{ needs.check-source.outputs.source-commit }}
           SOURCE_TREE_SHA: ${{ needs.check-source.outputs.source-tree }}
           SUPPLEMENT_REVISION: ${{ needs.check-source.outputs.supplement-revision }}
-        shell: bash
-        run: |
-          node --input-type=module -e "import{writeFileSync}from'node:fs';writeFileSync('.github/source-state.json',JSON.stringify({branch:'main',sourceCommit:process.env.SOURCE_COMMIT,sourceTreeSha:process.env.SOURCE_TREE_SHA,supplementRevision:process.env.SUPPLEMENT_REVISION,checkedAt:new Date().toISOString()},null,2)+'\n')"
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .github/source-state.json
-          git diff --cached --quiet || git commit -m "chore: record OpenHolidays source check"
-          git push
+        with:
+          github-token: ${{ github.token }}
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const repositoryNameWithOwner = `${owner}/${repo}`;
+            const state = {
+              branch: "main",
+              sourceCommit: process.env.SOURCE_COMMIT,
+              sourceTreeSha: process.env.SOURCE_TREE_SHA,
+              supplementRevision: process.env.SUPPLEMENT_REVISION,
+              checkedAt: new Date().toISOString(),
+            };
+            const contents = Buffer.from(`${JSON.stringify(state, null, 2)}\n`).toString("base64");
+
+            const current = await github.graphql(`
+              query CurrentHead($owner: String!, $repo: String!) {
+                repository(owner: $owner, name: $repo) {
+                  ref(qualifiedName: "refs/heads/master") {
+                    target { oid }
+                  }
+                }
+              }
+            `, { owner, repo });
+            const expectedHeadOid = current.repository.ref.target.oid;
+
+            const result = await github.graphql(`
+              mutation RecordSource($input: CreateCommitOnBranchInput!) {
+                createCommitOnBranch(input: $input) {
+                  commit { oid url }
+                }
+              }
+            `, {
+              input: {
+                branch: { repositoryNameWithOwner, branchName: "master" },
+                expectedHeadOid,
+                message: { headline: "chore: record OpenHolidays source check" },
+                fileChanges: {
+                  additions: [{ path: ".github/source-state.json", contents }],
+                },
+              },
+            });
+
+            const commit = result.createCommitOnBranch.commit;
+            const verification = await github.rest.repos.getCommit({ owner, repo, ref: commit.oid });
+            if (!verification.data.commit.verification?.verified) {
+              core.setFailed(`GitHub did not verify ${commit.oid}`);
+              return;
+            }
+            core.info(`Recorded source state in verified commit ${commit.url}`);
