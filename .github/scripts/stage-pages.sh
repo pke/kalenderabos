@@ -46,7 +46,6 @@ if git ls-remote --exit-code --heads origin gh-pages >/dev/null 2>&1; then
 else
   git worktree add --detach "$state_directory" HEAD
   git -C "$state_directory" switch --orphan gh-pages
-  git -C "$state_directory" rm -rf .
 fi
 
 if [[ -n "$route" ]]; then
