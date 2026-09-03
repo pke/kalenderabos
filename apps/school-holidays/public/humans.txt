@@ -2,7 +2,7 @@
 
 Project: Schulferien-Kalenderabo
 By: kalenderabos.de contributors
-Website: https://schulferien.kalenderabos.de
+Website: https://kalenderabos.de/schulferien/
 
 /* THANKS */
 

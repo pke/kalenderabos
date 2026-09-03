@@ -95,7 +95,7 @@ for (const [countryCode, country] of Object.entries(catalog.c || {})) {
         fail(`${feedPath}: invalid VCALENDAR envelope or line endings`);
       }
       const unfolded = body.replace(/\r\n[ \t]/g, "");
-      if (!unfolded.includes(`SOURCE;VALUE=URI:https://schulferien.kalenderabos.de${feedPath}`)) {
+      if (!unfolded.includes(`SOURCE;VALUE=URI:https://kalenderabos.de/schulferien${feedPath}`)) {
         fail(`${feedPath}: SOURCE metadata does not match its static URL`);
       }
       if (!unfolded.includes("DESCRIPTION:Bereitgestellt von kalenderabos.de\\nDatenquelle: ")) {
@@ -153,10 +153,10 @@ if (indexHtml.includes("GENERATED_COUNTRY_OPTIONS") || indexHtml.includes("GENER
 if (indexHtml.includes("<template")) {
   fail("pre-generated UI templates remain in index.html");
 }
-if (!indexHtml.includes('rel="preload" href="/catalog.json" as="fetch" crossorigin')) {
+if (!indexHtml.includes('rel="preload" href="./catalog.json" as="fetch" crossorigin')) {
   fail("catalog.json is not preloaded by index.html");
 }
-if (!app.includes('fetch("/catalog.json")')) {
+if (!app.includes('new URL("catalog.json", document.baseURI)')) {
   fail("app.js does not load the compact UI catalog");
 }
 if (app.includes("BEGIN:VCALENDAR") || app.includes("VEVENT")) {
@@ -180,7 +180,7 @@ if (
   fail("generated supplement revision differs from the checked pipeline input");
 }
 if (
-  !indexHtml.includes('<link rel="author" href="/humans.txt"') ||
+  !indexHtml.includes('<link rel="author" href="./humans.txt"') ||
   !humans.includes("Holiday data: OpenHolidays API project")
 ) {
   fail("humans.txt or its author link is missing");

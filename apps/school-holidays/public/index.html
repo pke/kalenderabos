@@ -7,32 +7,59 @@
       name="description"
       content="Abonniere Schulferien als automatisch aktualisierten iCalendar von kalenderabos.de."
     />
-    <link rel="canonical" href="https://schulferien.kalenderabos.de" />
-    <link rel="author" href="/humans.txt" />
+    <link rel="canonical" href="https://kalenderabos.de/schulferien/" />
+    <link rel="author" href="./humans.txt" />
     <title>Schulferien abonnieren · kalenderabos.de</title>
-    <link rel="stylesheet" href="/styles.css" />
-    <link rel="preload" href="/catalog.json" as="fetch" crossorigin />
-    <script src="/app.js" type="module"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preload" href="./catalog.json" as="fetch" crossorigin />
+    <script src="./app.js" type="module"></script>
   </head>
   <body class="calendar-app">
+    <input
+      type="checkbox"
+      id="themeswitch"
+      class="visually-hidden"
+      role="switch"
+      aria-label="Zwischen hellem und dunklem Design wechseln"
+    />
+    <script>
+      (function () {
+        var control = document.getElementById("themeswitch");
+        var osDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          var savedTheme = window.localStorage.getItem("kalenderabos-theme");
+          if (savedTheme === "dark" || savedTheme === "light") {
+            control.checked = (savedTheme === "dark") !== osDark;
+          }
+        } catch {}
+        control.addEventListener("change", function () {
+          try {
+            window.localStorage.setItem(
+              "kalenderabos-theme",
+              osDark !== control.checked ? "dark" : "light",
+            );
+          } catch {}
+        });
+      })();
+    </script>
     <div class="page-shell">
       <header class="site-header">
-        <a class="brand" href="/" aria-label="Schulferien-Kalenderabo Startseite">
-          <span class="brand-mark" aria-hidden="true">
-            <span></span><span></span><span></span>
-          </span>
-          <span>kalenderabos.de</span>
-        </a>
-        <div class="header-actions">
-          <a
-            class="source-link"
-            href="https://www.openholidaysapi.org/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Daten: OpenHolidays
-            <span aria-hidden="true">↗</span>
+        <div class="header-identity">
+          <a class="brand" href="../" aria-label="kalenderabos.de Startseite">
+            <span class="brand-mark" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </span>
+            <span class="brand-name">kalenderabos.de</span>
           </a>
+          <h1 class="product-name">Schulferienkalender</h1>
+        </div>
+        <div class="header-actions">
+          <label
+            for="themeswitch"
+            class="theme-toggle"
+            aria-hidden="true"
+            title="Farbschema wechseln"
+          >◐</label>
         </div>
       </header>
 
@@ -57,10 +84,6 @@
       </div>
 
       <main class="app-main">
-        <section class="hero global-hero" aria-labelledby="page-title">
-          <h1 id="page-title">Schulferien automatisch aktuell in Deinem Kalender</h1>
-        </section>
-
         <div id="detail-view" hidden>
           <section class="configurator" aria-label="Ferienkalender konfigurieren">
             <form id="calendar-form">
@@ -125,12 +148,8 @@
         <section
           class="semantic-view"
           id="semantic-view"
-          aria-labelledby="semantic-heading"
+          aria-label="Ferienkalender auswählen"
         >
-          <header class="semantic-view-head">
-            <h2 id="semantic-heading">Regionen nach Anfangsbuchstaben</h2>
-            <span id="semantic-count">Länder werden geladen …</span>
-          </header>
           <div class="semantic-scroll" id="semantic-scroll">
             <div
               class="semantic-overview"
@@ -141,8 +160,16 @@
             <footer id="site-footer">
               <p>Open-Data-Kalender · monatlich geprüft · kein Benutzerkonto</p>
               <div class="footer-links">
-                <p>Daten unter ODbL, bereitgestellt von OpenHolidays und amtlichen Ergänzungsquellen.</p>
-                <a href="/datenschutz.html">Datenschutz</a>
+                <p>
+                  Daten unter ODbL, bereitgestellt von
+                  <a
+                    href="https://www.openholidaysapi.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >OpenHolidays</a>
+                  und amtlichen Ergänzungsquellen.
+                </p>
+                <a href="./datenschutz.html">Datenschutz</a>
               </div>
             </footer>
           </div>

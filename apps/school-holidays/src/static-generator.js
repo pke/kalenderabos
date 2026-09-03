@@ -2,7 +2,7 @@ import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import { basename, join } from "node:path";
 import { fingerprintDirectory } from "./data-fingerprint.js";
 
-const SITE_ORIGIN = "https://schulferien.kalenderabos.de";
+const SITE_ORIGIN = "https://kalenderabos.de/schulferien";
 const SOURCE_REPOSITORY = "https://github.com/openpotato/openholidaysapi.data";
 const OPEN_HOLIDAYS_SOURCE = {
   name: [{ language: "DE", text: "OpenHolidays" }],

@@ -15,8 +15,6 @@ const feedList = document.querySelector("#feed-list");
 const semanticView = document.querySelector("#semantic-view");
 const semanticScroll = document.querySelector("#semantic-scroll");
 const semanticOverview = document.querySelector("#semantic-overview");
-const semanticHeading = document.querySelector("#semantic-heading");
-const semanticCount = document.querySelector("#semantic-count");
 const semanticZoomLabel = document.querySelector("#semantic-zoom-label");
 const semanticZoomOut = document.querySelector("#semantic-zoom-out");
 const semanticZoomIn = document.querySelector("#semantic-zoom-in");
@@ -260,8 +258,8 @@ function calendarUrl(row) {
   const region = row.dataset.region;
   if (!country || !region) return "";
   return new URL(
-    `/feeds/${country.code}/${region}/${selectedLanguage()}.ics`,
-    window.location.origin,
+    `feeds/${country.code}/${region}/${selectedLanguage()}.ics`,
+    document.baseURI,
   ).toString();
 }
 
@@ -341,25 +339,16 @@ function createTile({ label, meta, kind, value, initial = "", selection = "" }) 
   return tile;
 }
 
-function detailHeadings(country) {
+function detailHeading(country) {
   if (country.nationwide) {
-    return {
-      detail: country.advisory
-        ? "Bundesweit empfohlener Ferienkalender"
-        : "Landesweiter Ferienkalender",
-      semantic: "Kalender nach Anfangsbuchstaben",
-    };
+    return country.advisory
+      ? "Bundesweit empfohlener Ferienkalender"
+      : "Landesweiter Ferienkalender";
   }
   if (country.code === "de") {
-    return {
-      detail: "Ferienkalender nach Bundesländern",
-      semantic: "Bundesländer nach Anfangsbuchstaben",
-    };
+    return "Ferienkalender nach Bundesländern";
   }
-  return {
-    detail: "Regionale Ferienkalender",
-    semantic: "Regionen nach Anfangsbuchstaben",
-  };
+  return "Regionale Ferienkalender";
 }
 
 function renderFeeds() {
@@ -387,7 +376,7 @@ function renderFeeds() {
   }
   feedIndex.replaceChildren(indexFragment);
 
-  state.detailHeading = detailHeadings(country).detail;
+  state.detailHeading = detailHeading(country);
   state.renderedCountry = country.code;
   feedFilter.value = "";
   updateFeedLinks();
@@ -435,8 +424,6 @@ function semanticCountries() {
 
 function renderSemanticOverview() {
   const country = selectedCountry();
-  let heading = "Ferienkalender";
-  let count = "";
   let tiles = [];
 
   if (semanticZoomLevel === 1 && country) {
@@ -447,8 +434,6 @@ function renderSemanticOverview() {
       kind: "region-initial",
       value: initial,
     }));
-    heading = detailHeadings(country).semantic;
-    count = `${groups.length} Buchstaben`;
   } else if (semanticZoomLevel === 2) {
     const countries = semanticCountries();
     tiles = countries.map((countryItem) => createTile({
@@ -459,10 +444,6 @@ function renderSemanticOverview() {
       initial: countryItem.initial,
       selection: countryItem.code === country?.code ? "Vorausgewählt" : "",
     }));
-    heading = state.countryInitialFilter
-      ? `Länder mit ${state.countryInitialFilter}`
-      : "Länder";
-    count = `${countries.length} Länder`;
   } else if (semanticZoomLevel === 3) {
     const groups = groupedItemsByInitial(state.countries);
     tiles = groups.map(([initial, items]) => createTile({
@@ -474,13 +455,9 @@ function renderSemanticOverview() {
         ? `${country.name} vorausgewählt`
         : "",
     }));
-    heading = "Länder nach Anfangsbuchstaben";
-    count = `${groups.length} Buchstaben`;
   }
 
   replaceSemanticTiles(tiles);
-  semanticHeading.textContent = heading;
-  semanticCount.textContent = count;
 }
 
 function semanticEntryCount(level) {
@@ -705,7 +682,7 @@ function loadFeeds({ targetZoomLevel = 0, origin } = {}) {
     setStatus("Gib ein Land ein und wähle es aus der Vorschlagsliste.");
     return;
   }
-  state.detailHeading = detailHeadings(country).detail;
+  state.detailHeading = detailHeading(country);
   setStatus(country.advisory);
   setSemanticZoom(targetZoomLevel, { origin });
 }
@@ -743,7 +720,7 @@ async function copyFeedLink(button) {
 
 async function initialize() {
   try {
-    const response = await fetch("/catalog.json");
+    const response = await fetch(new URL("catalog.json", document.baseURI));
     if (!response.ok) throw new Error("Ferienkalender konnten nicht geladen werden.");
     state.countries = parseCatalog(await response.json());
     populateCountries();

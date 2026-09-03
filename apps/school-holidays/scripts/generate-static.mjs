@@ -45,7 +45,6 @@ await rm(outputDirectory, { recursive: true, force: true });
 await mkdir(outputDirectory, { recursive: true });
 await cp(resolve(projectDirectory, "public"), outputDirectory, { recursive: true });
 await writeFile(resolve(outputDirectory, ".nojekyll"), "", "utf8");
-await writeFile(resolve(outputDirectory, "CNAME"), "schulferien.kalenderabos.de\n", "utf8");
 
 const { manifest } = await buildStaticData({
   sourceDirectory,

@@ -8,21 +8,56 @@
       name="description"
       content="Datenschutzerklärung für den abonnierbaren Schulferienkalender von kalenderabos.de."
     />
-    <link rel="canonical" href="https://schulferien.kalenderabos.de/datenschutz.html" />
-    <link rel="author" href="/humans.txt" />
+    <link rel="canonical" href="https://kalenderabos.de/schulferien/datenschutz.html" />
+    <link rel="author" href="./humans.txt" />
     <title>Datenschutz · kalenderabos.de</title>
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <input
+      type="checkbox"
+      id="themeswitch"
+      class="visually-hidden"
+      role="switch"
+      aria-label="Zwischen hellem und dunklem Design wechseln"
+    />
+    <script>
+      (function () {
+        var control = document.getElementById("themeswitch");
+        var osDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          var savedTheme = window.localStorage.getItem("kalenderabos-theme");
+          if (savedTheme === "dark" || savedTheme === "light") {
+            control.checked = (savedTheme === "dark") !== osDark;
+          }
+        } catch {}
+        control.addEventListener("change", function () {
+          try {
+            window.localStorage.setItem(
+              "kalenderabos-theme",
+              osDark !== control.checked ? "dark" : "light",
+            );
+          } catch {}
+        });
+      })();
+    </script>
     <div class="page-shell">
       <header class="site-header">
-        <a class="brand" href="/" aria-label="Zur Schulferien-Kalenderabo-Startseite">
+        <a class="brand" href="../" aria-label="kalenderabos.de Startseite">
           <span class="brand-mark" aria-hidden="true">
             <span></span><span></span><span></span>
           </span>
           <span>kalenderabos.de</span>
         </a>
-        <a class="source-link" href="/">← Kalender erstellen</a>
+        <div class="header-actions">
+          <a class="source-link" href="./">← Kalender erstellen</a>
+          <label
+            for="themeswitch"
+            class="theme-toggle"
+            aria-hidden="true"
+            title="Farbschema wechseln"
+          >◐</label>
+        </div>
       </header>
 
       <main class="legal-main">
@@ -89,8 +124,8 @@
       <footer>
         <p>Open-Data-Kalender · kein Benutzerkonto · kein Tracking</p>
         <div class="footer-links">
-          <a href="/">Startseite</a>
-          <a href="/datenschutz.html" aria-current="page">Datenschutz</a>
+          <a href="./">Kalender</a>
+          <a href="./datenschutz.html" aria-current="page">Datenschutz</a>
         </div>
       </footer>
     </div>

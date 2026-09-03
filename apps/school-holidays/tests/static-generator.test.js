@@ -49,7 +49,7 @@ test("iCalendar output keeps UUIDs and uses an exclusive DTEND", () => {
     language: "DE",
     generatedAt: "2026-09-02T00:00:00Z",
     sourceCommit: "abc123",
-    siteOrigin: "https://schulferien.kalenderabos.de",
+    siteOrigin: "https://kalenderabos.de/schulferien",
     feedPath: "feeds/de/de-be/de.ics",
   });
 
@@ -58,13 +58,13 @@ test("iCalendar output keeps UUIDs and uses an exclusive DTEND", () => {
   assert.match(output, /DTEND;VALUE=DATE:20260823/);
   assert.match(output.replace(/\r\n /g, ""), /SUMMARY;LANGUAGE=DE:Sommerferien – Berlin/);
   assert.match(output, /PRODID:-\/\/kalenderabos\.de\/\/Schulferien Kalenderabo\/\/DE/);
-  assert.match(output, /SOURCE;VALUE=URI:https:\/\/schulferien\.kalenderabos\.de\/feeds\/de\/de-be\/de\.ics/);
+  assert.match(output, /SOURCE;VALUE=URI:https:\/\/kalenderabos\.de\/schulferien\/feeds\/de\/de-be\/de\.ics/);
   assert.match(
     output.replace(/\r\n /g, ""),
     /DESCRIPTION:Bereitgestellt von kalenderabos\.de\\nDatenquelle: OpenHolidays/,
   );
   assert.equal(
-    [...output.matchAll(/\r\nURL:https:\/\/schulferien\.kalenderabos\.de\r\n/g)].length,
+    [...output.matchAll(/\r\nURL:https:\/\/kalenderabos\.de\/schulferien\r\n/g)].length,
     2,
   );
   assert.doesNotMatch(output, /URL:https:\/\/github\.com/);
@@ -87,7 +87,7 @@ test("iCalendar output identifies recommended supplemental data", () => {
     language: "DE",
     generatedAt: "2026-09-02T00:00:00Z",
     sourceCommit: "abc123",
-    siteOrigin: "https://schulferien.kalenderabos.de",
+    siteOrigin: "https://kalenderabos.de/schulferien",
     feedPath: "feeds/ru/ru/de.ics",
     dataSource: {
       name: [{ language: "DE", text: "Russisches Bildungsministerium" }],
