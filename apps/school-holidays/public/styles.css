@@ -28,6 +28,7 @@ body {
 body.calendar-app {
   height: var(--app-viewport-height, 100dvh);
   min-height: var(--app-viewport-height, 100dvh);
+  overflow: hidden;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -222,12 +223,13 @@ a {
 }
 
 .calendar-app .page-shell {
+  position: fixed;
+  inset: 0;
   display: grid;
   height: var(--app-viewport-height, 100dvh);
   min-height: 0;
-  padding-top: 72px;
   padding-bottom: 0;
-  grid-template-rows: minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr);
 }
 
 .site-header {
@@ -244,11 +246,7 @@ a {
 }
 
 .calendar-app .site-header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  padding-inline: max(20px, calc((100% - 1180px) / 2));
+  position: static;
 }
 
 .header-actions {
@@ -1137,16 +1135,8 @@ footer p {
     padding-inline: 14px;
   }
 
-  .calendar-app .page-shell {
-    padding-top: 64px;
-  }
-
   .site-header {
     min-height: 64px;
-  }
-
-  .calendar-app .site-header {
-    padding-inline: 14px;
   }
 
   .source-link {

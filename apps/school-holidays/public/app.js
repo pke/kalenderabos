@@ -3,6 +3,8 @@ function resetDocumentScroll() {
   if (document.scrollingElement) document.scrollingElement.scrollTop = 0;
 }
 
+if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+
 let viewportSyncFrame = 0;
 
 function syncAppViewportHeight() {
