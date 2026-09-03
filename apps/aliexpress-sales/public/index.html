@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="AliExpress-Verkaufsaktionen als automatisch aktualisierter Kalender – ohne Konto, Cookies oder Tracking."
+    />
+    <link rel="canonical" href="https://kalenderabos.de/aesales/" />
+    <title>AliExpress Sales-Kalender · kalenderabos.de</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <input
+      type="checkbox"
+      id="themeswitch"
+      class="visually-hidden"
+      role="switch"
+      aria-label="Zwischen hellem und dunklem Design wechseln"
+    />
+    <script>
+      (function () {
+        var control = document.getElementById("themeswitch");
+        var osDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          var savedTheme = window.localStorage.getItem("kalenderabos-theme");
+          if (savedTheme === "dark" || savedTheme === "light") {
+            control.checked = (savedTheme === "dark") !== osDark;
+          }
+        } catch {}
+        control.addEventListener("change", function () {
+          try {
+            window.localStorage.setItem(
+              "kalenderabos-theme",
+              osDark !== control.checked ? "dark" : "light",
+            );
+          } catch {}
+        });
+      })();
+    </script>
+
+    <div class="page">
+      <header class="site-header">
+        <a class="brand" href="/" aria-label="kalenderabos.de Startseite">
+          <span class="brand-mark" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+          <span>kalenderabos.de</span>
+        </a>
+
+        <label
+          for="themeswitch"
+          class="theme-toggle"
+          aria-hidden="true"
+          title="Farbschema wechseln"
+        >◐</label>
+      </header>
+
+      <main>
+        <section class="calendar-intro" aria-labelledby="page-title">
+          <div class="intro-copy">
+            <div class="eyebrow-row">
+              <p class="eyebrow">Aktionskalender</p>
+              <span class="status">Monatlich geprüft</span>
+            </div>
+            <h1 id="page-title">AliExpress Sales im Kalender.</h1>
+            <p class="lede">
+              Angebotszeiträume einmal abonnieren und anschließend automatisch
+              im gewohnten Kalender aktuell halten.
+            </p>
+            <div class="principles" aria-label="Eigenschaften">
+              <span>Kein Konto</span>
+              <span>Keine Cookies</span>
+              <span>Kein Tracking</span>
+            </div>
+          </div>
+
+          <section class="subscribe-card" aria-labelledby="subscribe-title">
+            <div class="card-heading">
+              <div>
+                <p>Stabile Kalender-URL</p>
+                <h2 id="subscribe-title">Sales-Kalender abonnieren</h2>
+              </div>
+              <span class="file-type">ICS</span>
+            </div>
+
+            <div class="url-box">
+              <label class="visually-hidden" for="cal-url">Kalender-URL</label>
+              <input type="text" id="cal-url" readonly />
+              <button type="button" id="copy-button">Link kopieren</button>
+            </div>
+            <p class="copy-status" id="copy-status" aria-live="polite"></p>
+
+            <div class="action-buttons">
+              <a id="webcal-link" class="action-btn primary">Kalender hinzufügen</a>
+              <a href="../aesales.ics" class="action-btn">ICS herunterladen</a>
+              <a id="google-cal" target="_blank" rel="noopener" class="action-btn">
+                Google Calendar
+              </a>
+            </div>
+
+          </section>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>
+          Unabhängiges Zusatzangebot von kalenderabos.de – ohne Verbindung zu
+          oder Beauftragung durch AliExpress. Die Termine stammen aus öffentlich
+          zugänglichen Kalender- und Angebotsquellen. Diese Website setzt keine
+          Cookies ein und bindet keine Tracking-Dienste ein.
+        </p>
+        <nav aria-label="Rechtliches">
+          <a href="/datenschutz.html">Datenschutz</a>
+        </nav>
+      </footer>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
