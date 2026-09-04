@@ -55,6 +55,12 @@ const semanticZoomOut = document.querySelector("#semantic-zoom-out");
 const semanticZoomIn = document.querySelector("#semantic-zoom-in");
 const siteFooter = document.querySelector("#site-footer");
 const status = document.querySelector("#form-status");
+const androidSubscriptionDialog = document.querySelector("#android-subscription-dialog");
+const androidSubscriptionTitle = document.querySelector("#android-subscription-title");
+const androidSubscriptionCopyStatus = document.querySelector(
+  "#android-subscription-copy-status",
+);
+const androidSubscriptionUrl = document.querySelector("#android-subscription-url");
 
 const LARGE_FEED_THRESHOLD = 30;
 const MAX_SEMANTIC_ZOOM = 3;
@@ -85,6 +91,27 @@ function setStatus(message, kind = "neutral") {
   status.textContent = message;
   status.dataset.kind = kind;
   status.hidden = !message;
+}
+
+function showAndroidSubscriptionHint(url, copied) {
+  if (!androidSubscriptionDialog?.showModal) {
+    setStatus(
+      copied
+        ? "Kalender-URL kopiert. Das Google-Calendar-Abo muss einmalig am Computer unter Einstellungen → Kalender hinzufügen → Per URL eingerichtet werden."
+        : `Kopieren nicht möglich. Kalender-URL: ${url}`,
+      copied ? "neutral" : "error",
+    );
+    return;
+  }
+
+  androidSubscriptionTitle.textContent = copied
+    ? "Kalender-Link kopiert"
+    : "Kalender-Link verwenden";
+  androidSubscriptionCopyStatus.textContent = copied
+    ? "Die Kalender-URL wurde in die Zwischenablage kopiert."
+    : "Automatisches Kopieren war nicht möglich. Die Kalender-URL kann unten markiert und kopiert werden.";
+  androidSubscriptionUrl.textContent = url;
+  if (!androidSubscriptionDialog.open) androidSubscriptionDialog.showModal();
 }
 
 function selectedValue(name) {
@@ -318,8 +345,8 @@ function updateFeedLinks() {
     copy.setAttribute("aria-label", `Link für ${name} kopieren`);
     add.href = subscriptionUrl(url);
     if (IS_ANDROID) {
-      add.textContent = "Auf Android einrichten";
-      add.title = "Kalender-URL kopieren und Einrichtung anzeigen";
+      add.textContent = "Kalender hinzufügen";
+      add.title = "Hinweis zur Einrichtung mit Google Calendar auf Android";
     } else {
       add.textContent = "Kalender hinzufügen";
       add.removeAttribute("title");
@@ -836,17 +863,15 @@ feedList.addEventListener("click", async (event) => {
       await writeClipboard(url);
       add.textContent = "Link kopiert";
       window.setTimeout(() => {
-        add.textContent = "Auf Android einrichten";
+        add.textContent = "Kalender hinzufügen";
       }, 2200);
-      setStatus(
-        "Kalender-URL kopiert. Google Calendar kann URL-Abos nicht in der Android-App hinzufügen. Am Computer in Google Calendar: Einstellungen → Kalender hinzufügen → Per URL.",
-      );
+      showAndroidSubscriptionHint(url, true);
     } catch {
       add.textContent = "Kopieren fehlgeschlagen";
       window.setTimeout(() => {
-        add.textContent = "Auf Android einrichten";
+        add.textContent = "Kalender hinzufügen";
       }, 2200);
-      setStatus("Der Link konnte nicht kopiert werden.", "error");
+      showAndroidSubscriptionHint(url || "", false);
     }
   }
 });

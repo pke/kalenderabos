@@ -663,6 +663,78 @@ input[type="text"]:disabled {
   color: var(--error);
 }
 
+.android-subscription-dialog {
+  width: min(34rem, calc(100% - 32px));
+  max-height: calc(100dvh - 32px);
+  padding: 0;
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  color: var(--ink);
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
+.android-subscription-dialog::backdrop {
+  background: rgba(5, 14, 9, 0.68);
+  backdrop-filter: blur(4px);
+}
+
+.android-subscription-dialog form {
+  padding: 24px;
+}
+
+.android-subscription-dialog h2 {
+  margin: 3px 0 14px;
+  font-size: clamp(1.25rem, 5vw, 1.65rem);
+}
+
+.android-subscription-dialog p {
+  margin: 0 0 14px;
+  line-height: 1.55;
+}
+
+.android-subscription-dialog .dialog-eyebrow {
+  margin: 0;
+  color: var(--green-bright);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.android-subscription-dialog code {
+  display: block;
+  max-height: 5.5rem;
+  margin: 0 0 16px;
+  padding: 10px 12px;
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font-family: "Courier New", monospace;
+  font-size: 0.78rem;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.android-subscription-dialog .dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.android-subscription-dialog button {
+  min-width: 88px;
+  min-height: 44px;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 12px;
+  color: var(--on-accent);
+  background: var(--green);
+  font-weight: 800;
+  cursor: pointer;
+}
+
 .feed-section {
   position: relative;
   z-index: 1;
