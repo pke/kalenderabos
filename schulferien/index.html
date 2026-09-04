@@ -210,6 +210,34 @@
         </section>
 
       </main>
+
+      <dialog
+        class="android-subscription-dialog"
+        id="android-subscription-dialog"
+        aria-labelledby="android-subscription-title"
+        aria-describedby="android-subscription-description"
+      >
+        <form method="dialog">
+          <p class="dialog-eyebrow">Android</p>
+          <h2 id="android-subscription-title">Kalender-Link kopiert</h2>
+          <div id="android-subscription-description">
+            <p id="android-subscription-copy-status">
+              Die Kalender-URL wurde in die Zwischenablage kopiert.
+            </p>
+            <code id="android-subscription-url"></code>
+            <p>
+              Google Calendar kann externe URL-Abos nicht direkt in der
+              Android-App hinzufügen. Die URL muss einmalig am Computer in
+              Google Calendar unter „Einstellungen → Kalender hinzufügen → Per
+              URL“ eingefügt werden. Danach kann der Kalender auch auf Android
+              angezeigt werden.
+            </p>
+          </div>
+          <div class="dialog-actions">
+            <button type="submit">OK</button>
+          </div>
+        </form>
+      </dialog>
     </div>
   </body>
 </html>
