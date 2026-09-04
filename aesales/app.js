@@ -8,21 +8,43 @@ const urlInput = document.getElementById("cal-url");
 const copyButton = document.getElementById("copy-button");
 const copyStatus = document.getElementById("copy-status");
 const subscribeLink = document.getElementById("webcal-link");
+const androidSubscriptionDialog = document.getElementById("android-subscription-dialog");
+const androidSubscriptionTitle = document.getElementById("android-subscription-title");
+const androidSubscriptionCopyStatus = document.getElementById(
+  "android-subscription-copy-status",
+);
+const androidSubscriptionUrl = document.getElementById("android-subscription-url");
 
 urlInput.value = calendarUrl;
 const googleLink = document.getElementById("google-cal");
 googleLink.href = googleCalendarSettingsUrl;
 subscribeLink.href = isAndroid ? calendarUrl : webcalUrl;
 if (isAndroid) {
-  subscribeLink.textContent = "Auf Android einrichten";
-  subscribeLink.title = "Kalender-URL kopieren und Einrichtung anzeigen";
+  subscribeLink.textContent = "Kalender hinzufügen";
+  subscribeLink.title = "Hinweis zur Einrichtung mit Google Calendar auf Android";
   subscribeLink.addEventListener("click", async (event) => {
     event.preventDefault();
     const copied = await copyCalendarUrl();
-    copyStatus.textContent = copied
-      ? "Google Calendar kann URL-Abos nicht in der Android-App hinzufügen. Die URL ist kopiert; am Computer unter Einstellungen → Kalender hinzufügen → Per URL einfügen."
-      : `Kopieren nicht möglich. Kalender-URL: ${calendarUrl}`;
+    showAndroidSubscriptionHint(copied);
   });
+}
+
+function showAndroidSubscriptionHint(copied) {
+  if (!androidSubscriptionDialog?.showModal) {
+    copyStatus.textContent = copied
+      ? "Kalender-URL kopiert. Das Google-Calendar-Abo muss einmalig am Computer unter Einstellungen → Kalender hinzufügen → Per URL eingerichtet werden."
+      : `Kopieren nicht möglich. Kalender-URL: ${calendarUrl}`;
+    return;
+  }
+
+  androidSubscriptionTitle.textContent = copied
+    ? "Kalender-Link kopiert"
+    : "Kalender-Link verwenden";
+  androidSubscriptionCopyStatus.textContent = copied
+    ? "Die Kalender-URL wurde in die Zwischenablage kopiert."
+    : "Automatisches Kopieren war nicht möglich. Die Kalender-URL kann unten markiert und kopiert werden.";
+  androidSubscriptionUrl.textContent = calendarUrl;
+  if (!androidSubscriptionDialog.open) androidSubscriptionDialog.showModal();
 }
 
 async function copyCalendarUrl(showConfirmation = false) {
