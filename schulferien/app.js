@@ -304,12 +304,8 @@ function webcalUrl(url) {
   return url.replace(/^https?:/i, "webcal:");
 }
 
-function googleCalendarUrl(url) {
-  return `https://calendar.google.com/calendar/r?cid=${encodeURIComponent(url)}`;
-}
-
 function subscriptionUrl(url) {
-  return IS_ANDROID ? googleCalendarUrl(url) : webcalUrl(url);
+  return IS_ANDROID ? url : webcalUrl(url);
 }
 
 function updateFeedLinks() {
@@ -322,9 +318,11 @@ function updateFeedLinks() {
     copy.setAttribute("aria-label", `Link für ${name} kopieren`);
     add.href = subscriptionUrl(url);
     if (IS_ANDROID) {
-      add.target = "_blank";
-      add.rel = "noopener";
-      add.title = "In Google Calendar abonnieren";
+      add.textContent = "Auf Android einrichten";
+      add.title = "Kalender-URL kopieren und Einrichtung anzeigen";
+    } else {
+      add.textContent = "Kalender hinzufügen";
+      add.removeAttribute("title");
     }
     add.setAttribute("aria-label", `Kalender für ${name} hinzufügen`);
   }
@@ -825,13 +823,31 @@ countryInput.addEventListener("input", () => {
   }
 });
 languageOptions.addEventListener("change", updateFeedLinks);
-feedList.addEventListener("click", (event) => {
+feedList.addEventListener("click", async (event) => {
   const button = event.target.closest("[data-action='copy']");
   if (button) copyFeedLink(button);
-  if (IS_ANDROID && event.target.closest(".feed-add")) {
-    setStatus(
-      "Nach dem Hinzufügen in Google Calendar den Kalender unter Einstellungen synchronisieren und einblenden.",
-    );
+  const add = event.target.closest(".feed-add");
+  if (IS_ANDROID && add) {
+    event.preventDefault();
+    const url = add.closest(".feed-row")
+      ?.querySelector("[data-action='copy']")?.dataset.url;
+    try {
+      if (!url) throw new Error("missing calendar URL");
+      await writeClipboard(url);
+      add.textContent = "Link kopiert";
+      window.setTimeout(() => {
+        add.textContent = "Auf Android einrichten";
+      }, 2200);
+      setStatus(
+        "Kalender-URL kopiert. Google Calendar kann URL-Abos nicht in der Android-App hinzufügen. Am Computer in Google Calendar: Einstellungen → Kalender hinzufügen → Per URL.",
+      );
+    } catch {
+      add.textContent = "Kopieren fehlgeschlagen";
+      window.setTimeout(() => {
+        add.textContent = "Auf Android einrichten";
+      }, 2200);
+      setStatus("Der Link konnte nicht kopiert werden.", "error");
+    }
   }
 });
 feedFilter.addEventListener("input", applyFeedFilter);
