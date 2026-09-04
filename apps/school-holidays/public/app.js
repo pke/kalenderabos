@@ -58,6 +58,8 @@ const status = document.querySelector("#form-status");
 
 const LARGE_FEED_THRESHOLD = 30;
 const MAX_SEMANTIC_ZOOM = 3;
+const IS_ANDROID = navigator.userAgentData?.platform === "Android" ||
+  /Android/i.test(navigator.userAgent);
 const state = {
   countries: [],
   countryInitialFilter: "",
@@ -302,6 +304,14 @@ function webcalUrl(url) {
   return url.replace(/^https?:/i, "webcal:");
 }
 
+function googleCalendarUrl(url) {
+  return `https://calendar.google.com/calendar/r?cid=${encodeURIComponent(url)}`;
+}
+
+function subscriptionUrl(url) {
+  return IS_ANDROID ? googleCalendarUrl(url) : webcalUrl(url);
+}
+
 function updateFeedLinks() {
   for (const row of feedList.querySelectorAll(".feed-row")) {
     const name = row.querySelector(".feed-identity strong")?.textContent || "Kalender";
@@ -310,7 +320,12 @@ function updateFeedLinks() {
     const add = row.querySelector(".feed-add");
     copy.dataset.url = url;
     copy.setAttribute("aria-label", `Link für ${name} kopieren`);
-    add.href = webcalUrl(url);
+    add.href = subscriptionUrl(url);
+    if (IS_ANDROID) {
+      add.target = "_blank";
+      add.rel = "noopener";
+      add.title = "In Google Calendar abonnieren";
+    }
     add.setAttribute("aria-label", `Kalender für ${name} hinzufügen`);
   }
 }
@@ -349,7 +364,15 @@ function createFeedRow(calendar, country) {
   return row;
 }
 
-function createTile({ label, meta, kind, value, initial = "", selection = "" }) {
+function createTile({
+  label,
+  meta,
+  metaTargets = [],
+  kind,
+  value,
+  initial = "",
+  selection = "",
+}) {
   const tile = document.createElement("button");
   tile.type = "button";
   tile.className = `semantic-tile semantic-tile-${kind}`;
@@ -360,7 +383,22 @@ function createTile({ label, meta, kind, value, initial = "", selection = "" }) 
   const title = document.createElement("strong");
   title.textContent = label;
   tile.append(title);
-  if (meta) {
+  if (metaTargets.length) {
+    const detail = document.createElement("span");
+    detail.className = "semantic-tile-options";
+    const visibleTargets = metaTargets.slice(0, 2);
+    for (const [index, target] of visibleTargets.entries()) {
+      if (index) detail.append(document.createTextNode(" · "));
+      const option = document.createElement("span");
+      option.className = "semantic-tile-option";
+      option.dataset.regionCode = target.code;
+      option.textContent = target.name;
+      detail.append(option);
+    }
+    const remaining = metaTargets.length - visibleTargets.length;
+    if (remaining > 0) detail.append(document.createTextNode(` + ${remaining}`));
+    tile.append(detail);
+  } else if (meta) {
     const detail = document.createElement("span");
     detail.textContent = meta;
     tile.append(detail);
@@ -465,7 +503,7 @@ function renderSemanticOverview() {
     const groups = groupedItemsByInitial(country.calendars);
     tiles = groups.map(([initial, items]) => createTile({
       label: initial,
-      meta: groupPreview(items),
+      metaTargets: items,
       kind: "region-initial",
       value: initial,
     }));
@@ -617,7 +655,13 @@ function scrollWithin(container, element) {
 function scrollFeedToInitial(initial) {
   const row = [...feedList.querySelectorAll(".feed-row")]
     .find((item) => !item.hidden && item.dataset.initial === initial);
-  if (row) scrollWithin(feedList, row);
+  if (row) scrollWithin(detailView, row);
+}
+
+function scrollFeedToRegion(regionCode) {
+  const row = [...feedList.querySelectorAll(".feed-row")]
+    .find((item) => !item.hidden && item.dataset.region === regionCode);
+  if (row) scrollWithin(detailView, row);
 }
 
 function touchDistance(touches) {
@@ -784,6 +828,11 @@ languageOptions.addEventListener("change", updateFeedLinks);
 feedList.addEventListener("click", (event) => {
   const button = event.target.closest("[data-action='copy']");
   if (button) copyFeedLink(button);
+  if (IS_ANDROID && event.target.closest(".feed-add")) {
+    setStatus(
+      "Nach dem Hinzufügen in Google Calendar den Kalender unter Einstellungen synchronisieren und einblenden.",
+    );
+  }
 });
 feedFilter.addEventListener("input", applyFeedFilter);
 feedIndex.addEventListener("click", (event) => {
@@ -798,10 +847,12 @@ semanticOverview.addEventListener("click", (event) => {
 
   if (tile.dataset.kind === "region-initial") {
     const initial = tile.dataset.value;
+    const regionCode = event.target.closest("[data-region-code]")?.dataset.regionCode;
     setSemanticZoom(0, {
       origin: { element: tile },
       afterUpdate: () => requestAnimationFrame(() => {
-        scrollFeedToInitial(initial);
+        if (regionCode) scrollFeedToRegion(regionCode);
+        else scrollFeedToInitial(initial);
       }),
     });
     return;

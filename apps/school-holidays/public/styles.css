@@ -851,6 +851,13 @@ input[type="text"]:disabled {
   line-height: 1.35;
 }
 
+.semantic-tile-option:hover,
+.semantic-tile-option:active {
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .feed-tools {
   display: grid;
   grid-template-columns: minmax(180px, 0.7fr) minmax(0, 1.3fr);
