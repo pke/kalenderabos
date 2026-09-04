@@ -138,11 +138,16 @@
                 <nav class="sales-actions" aria-label="AliExpress Sales-Kalender">
                   <a href="/aesales.ics" download>Download</a>
                   <a
-                    href="https://calendar.google.com/calendar/r?cid=webcal%3A%2F%2Fkalenderabos.de%2Faesales.ics"
+                    id="aesales-google"
+                    href="https://calendar.google.com/calendar/r?cid=https%3A%2F%2Fkalenderabos.de%2Faesales.ics"
                     target="_blank"
                     rel="noopener"
                   >Google Calendar</a>
-                  <a class="primary" href="webcal://kalenderabos.de/aesales.ics">Abo</a>
+                  <a
+                    id="aesales-subscribe"
+                    class="primary"
+                    href="webcal://kalenderabos.de/aesales.ics"
+                  >Abo</a>
                 </nav>
               </article>
             </div>
@@ -156,7 +161,11 @@
                 </p>
                 <ol>
                   <li><strong>Apple Kalender:</strong> Neues Kalenderabonnement anlegen.</li>
-                  <li><strong>Google Calendar:</strong> „Weitere Kalender“ → „Per URL“.</li>
+                  <li>
+                    <strong>Google Calendar:</strong> Im Browser „Weitere Kalender“ →
+                    „Per URL“. Auf Android anschließend in den Einstellungen den
+                    Kalender synchronisieren und einblenden.
+                  </li>
                   <li><strong>Outlook:</strong> „Kalender hinzufügen“ → „Aus dem Web“.</li>
                 </ol>
               </div>
@@ -172,5 +181,17 @@
         </nav>
       </footer>
     </div>
+    <script>
+      (() => {
+        const isAndroid = navigator.userAgentData?.platform === "Android" ||
+          /Android/i.test(navigator.userAgent);
+        if (!isAndroid) return;
+        const subscribe = document.getElementById("aesales-subscribe");
+        subscribe.href = document.getElementById("aesales-google").href;
+        subscribe.target = "_blank";
+        subscribe.rel = "noopener";
+        subscribe.title = "In Google Calendar abonnieren";
+      })();
+    </script>
   </body>
 </html>
