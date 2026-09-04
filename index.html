@@ -139,7 +139,7 @@
                   <a href="/aesales.ics" download>Download</a>
                   <a
                     id="aesales-google"
-                    href="https://calendar.google.com/calendar/r?cid=https%3A%2F%2Fkalenderabos.de%2Faesales.ics"
+                    href="https://calendar.google.com/calendar/u/0/r/settings/addbyurl"
                     target="_blank"
                     rel="noopener"
                   >Google Calendar</a>
@@ -152,19 +152,21 @@
               </article>
             </div>
 
-            <details class="manual-setup">
+            <details class="manual-setup" id="manual-setup">
               <summary>Manuell einrichten</summary>
               <div class="manual-setup-content">
                 <p>
                   Falls der Abo-Link nicht direkt öffnet, die Kalender-URL
                   kopieren und im Kalenderprogramm hinzufügen.
                 </p>
+                <p id="manual-setup-status" aria-live="polite" hidden></p>
                 <ol>
                   <li><strong>Apple Kalender:</strong> Neues Kalenderabonnement anlegen.</li>
                   <li>
-                    <strong>Google Calendar:</strong> Im Browser „Weitere Kalender“ →
-                    „Per URL“. Auf Android anschließend in den Einstellungen den
-                    Kalender synchronisieren und einblenden.
+                    <strong>Google Calendar:</strong> Am Computer im Browser
+                    „Weitere Kalender“ → „Per URL“. Die Android-App kann selbst
+                    keine URL-Abos hinzufügen; ein im Web hinzugefügter Kalender
+                    kann anschließend auch in der App angezeigt werden.
                   </li>
                   <li><strong>Outlook:</strong> „Kalender hinzufügen“ → „Aus dem Web“.</li>
                 </ol>
@@ -183,14 +185,57 @@
     </div>
     <script>
       (() => {
+        const calendarUrl = "https://kalenderabos.de/aesales.ics";
         const isAndroid = navigator.userAgentData?.platform === "Android" ||
           /Android/i.test(navigator.userAgent);
-        if (!isAndroid) return;
+        const google = document.getElementById("aesales-google");
         const subscribe = document.getElementById("aesales-subscribe");
-        subscribe.href = document.getElementById("aesales-google").href;
-        subscribe.target = "_blank";
-        subscribe.rel = "noopener";
-        subscribe.title = "In Google Calendar abonnieren";
+        const setup = document.getElementById("manual-setup");
+        const status = document.getElementById("manual-setup-status");
+
+        const copyCalendarUrl = async () => {
+          try {
+            await navigator.clipboard.writeText(calendarUrl);
+            return true;
+          } catch {
+            const fallback = document.createElement("textarea");
+            fallback.value = calendarUrl;
+            fallback.style.position = "fixed";
+            fallback.style.opacity = "0";
+            document.body.append(fallback);
+            fallback.select();
+            const copied = document.execCommand("copy");
+            fallback.remove();
+            return copied;
+          }
+        };
+
+        const copyAndExplain = async (message) => {
+          const copied = await copyCalendarUrl();
+          setup.open = true;
+          status.textContent = copied
+            ? message
+            : `Kopieren nicht möglich. Kalender-URL: ${calendarUrl}`;
+          status.hidden = false;
+          setup.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        };
+
+        google.addEventListener("click", () => {
+          void copyAndExplain(
+            "Kalender-URL kopiert. In Google Calendar unter „Per URL“ einfügen.",
+          );
+        });
+
+        if (!isAndroid) return;
+        subscribe.href = calendarUrl;
+        subscribe.textContent = "Android einrichten";
+        subscribe.title = "Kalender-URL kopieren und Einrichtung anzeigen";
+        subscribe.addEventListener("click", (event) => {
+          event.preventDefault();
+          void copyAndExplain(
+            "Google Calendar kann URL-Abos nicht in der Android-App hinzufügen. Die URL ist kopiert; die Einrichtung erfolgt am Computer über „Per URL“.",
+          );
+        });
       })();
     </script>
   </body>
